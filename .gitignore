@@ -1,6 +1,2 @@
-# mac stuff
-.DS_Store
-
-# emacs stuff
-*~
-\#*
+_site/
+_drafts/
