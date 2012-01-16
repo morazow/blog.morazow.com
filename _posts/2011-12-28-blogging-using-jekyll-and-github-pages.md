@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blogging Using Jekyll and Github Pages
+lang: en
 ---
 
 {{ page.title }}

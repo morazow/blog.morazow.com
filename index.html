@@ -4,10 +4,23 @@ title: Muhammet Orazow
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>My Blog Posts</h1>
   <ul class="posts">
-	{% for post in site.posts %}
-	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
+      {% for post in site.posts %}
+      {% case post.lang %}
+      {% when 'en' %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endcase %}
+      {% endfor %}
+  </ul>
+
+  <h1>Meniň Bloglarym</h1>
+  <ul class="posts">
+      {% for post in site.posts %}
+      {% case post.lang %}
+      {% when 'tm' %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endcase %}
+      {% endfor %}
   </ul>
 </div>
