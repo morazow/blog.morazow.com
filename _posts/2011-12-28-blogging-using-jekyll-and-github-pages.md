@@ -119,14 +119,10 @@ site and, currently I am happy with it. Maybe I will learn some html/css while m
 References
 ----------
 
-* [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki/) - Covers more features and configuration options for Jekyll. 
-
+* [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki/) - Covers more features and configuration options for Jekyll.
 * [GitHub Pages](http://pages.github.com/) - An explanation on how to setup your personal GitHub page as well as how to setup pages for your projects.
-
 * [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/yaml-front-matter) - Metadata for files that will be processed by Jekyll.
-
 * [Liquid Templating Language](http://www.liquidmarkup.org/) - The Ruby templating engine used by Jekyll.
-
 * [Markdown](http://daringfireball.net/projects/markdown/) - For simply editing posts.
 
 
