@@ -3,18 +3,6 @@
 
 /* Global */
 
-.clearfix:after {
-  content:".";
-  display:block;
-  height:0;
-  clear:both;
-  visibility:hidden;
-}
-.clearfix {display:inline-block;}
-/* Hide from IE Mac \*/
-  .clearfix {display:block;}
-/* End hide from IE Mac */
-
 * {
 	margin: 0,
 	padding: 0;
