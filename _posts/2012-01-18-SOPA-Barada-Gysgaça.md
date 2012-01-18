@@ -1,4 +1,3 @@
-
 ---
 layout: default
 lang: tm
@@ -36,3 +35,5 @@ Eger kanun giriziläýse, ilki bilen Youtube-a täsiri uly we Vimeo, Flickr ýal
 saýtlaryň bolsa ýapylmagy diýmek
 
 Gysgaça şeýleräk.
+
+![wiki-blackout](/files/wiki-blackout.png)
