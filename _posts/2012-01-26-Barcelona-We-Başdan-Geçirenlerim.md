@@ -19,6 +19,18 @@ uly depeler bilen gabalan ýalňyşmasam, her tarapda ýaşyl depeler bardy.
 Depedäki ýer bir milli muzeý ekeni, daş töweregi turistik ýerler. Owadan ýerler surata 
 düşürişdirip bir iki sagat aýlandym.
 
+![aýlaw](/files/barcelona/01.JPG)
+
+![age of empiresdäki, ýaý atýan bina menzeya](/files/barcelona/02.JPG)
+
+![depe](/files/barcelona/03.JPG)
+
+![](/files/barcelona/04.JPG)
+
+![](/files/barcelona/05.JPG)
+
+![](/files/barcelona/06.JPG)
+
 Pulymyň Ogurlanmagy
 -------------------
 
@@ -38,7 +50,7 @@ kinolardaky ýaly (:D) birnäçe çaga kriminallaryň suratlaryny görkezdiler,
 aklymda galan we meňzeýänlerini görkezişdirdim, hemme zady aýdyşdyrdym, report ýazyp özüme hem 
 bir kopiýasyny berdiler we aýryldym..
 
-Ýola çykmankam maňa iň ýakyn bolan adam, sadaka bermäni ýatdan çykarma diýipdi. Menem 
+Ýola çykmankam maňa iň ýakyn bolan adamlaryň biri, sadaka bermäni ýatdan çykarma diýipdi. Menem 
 sadaka berer ýaly musulman barmy töwerekde bahanasy bilen bermändim, olam niýetiň sadaka bolsa 
 bolýar diýipdi.. ogurlykdan soň ilkinji kelläme gelen zatdy şu. Haýyrlysy, ýol we başymyň 
 sadakasy bolsyn diýip ýenede gezelençden lezzet almak bilen bolyberdim. 
@@ -53,12 +65,19 @@ geldim, derrew gidesim gelýärdi Italiýa ýöne otly ýok ertir agşama çenli
 Marselle, Nice şaherlere hem otly ýokdy. Soň gämi (ferryboat) bilen gideýinle diýip metro bilen 
 Barcelona port-a gitdim.
 
+![barcelona porty](/files/barcelona/07.JPG)
+
 Derrew bilet soraşdyrdym, şugün gije ýarysy bir gämi Livorno-a (Italiýada Pisa şäherine ýakyn bolan şäher)
 gitýän ekeni, derrew biledi satyn aldym (19 sagatlyk Barcelona-dan Livorno-a gämi ýolçulugy Orta ýer deňizinden). 
 Sagat entäk ýaňy bir on töweregi bolansoň birzatlar iýişdirdim we töweregi gezdim, gaty bet ýerler 
 ekeni port töwerekleri, tüýs jübitler üçin (:D). 
 
+![köprüjik](/files/barcelona/08.JPG)
+
+![bet gadymy gämi](/files/barcelona/09.JPG)
+
 Onça ýadawlykdan soň öli ýaly ýatyp turyp, şu wagt gämiden Orta ýer deňiziň bir ýerlerinden ýazyp otyrn 
 şulary. (şu wagt internet ýok, şoň üçin bolan wagty <code>git push</code> etmeli boljak..)
 
+![ferryboat](/files/barcelona/10.JPG)
 
