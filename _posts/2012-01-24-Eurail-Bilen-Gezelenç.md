@@ -38,8 +38,8 @@ zatlarymy ýazmakçy. Ilki bilen rugzaga (sumka) nämeler alyşdyrdym,
 
 * Eşikler: gyşlyk geýip bolaýjak, şarf, şapka wş. 
 * Ýuwynmak üçin gerek zatlar, sabyn, şampun, diş pastasy, iň esasy hem sakgal syrýan maşynka :D
-* Kitap: Game of Thrones - Ice and Fire (Book One), nesip bolsa gutaryp bilerin ýolda okap 
-* Music: AC/DC butin albumlaryny download etdim, hemme aýdymlaryny diňlemekçi 
+* Kitap: Game of Thrones (A Song of Ice and Fire, Book One), nesip bolsa gutaryp bilerin ýolda okap 
+* Music: AC/DC butin albomlaryny download etdim, hemme aýdymlaryny diňlemekçi we birem Pink Floyd-dan hem öň diňlemedik albomlarymy aldym 
 * Laptop: men munsyz gezip bilmeýän, iň agyram şul 
 * Fotoaparat 
 * Pasaport we Bilet 
