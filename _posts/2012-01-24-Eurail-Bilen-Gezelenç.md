@@ -26,7 +26,8 @@ Biletler online satyn alynýar, we beren adresiňize iki hepde içinde ýetiril�
 Soň öňümizdäki alty aý içinde islendik wagt gezelençe başlap bolýar, ondan soň bilet köýýär. 
 Şeýle sorag ýüze çykyp biler, "Wiza gerekmi?" gezelenç üçin, meň özümä gerek däl diýip bilýän,
 biletiň özi wiza ýerine geçýärmikä diýýän, haýsam bolsa bir ýewropa döwletine gelip başlabermeli aýlan-çaýlaňa.
-Ýöne anyk bilmeli, öňümizdäki günlerde soramakçy. Islän soragyňyzy Eurail Facebook sahypalarynda birem 
+Ýöne anyk bilmeli, öňümizdäki günlerde soramakçy. Islän soragyňyzy [Eurail Facebook](http://www.facebook.com/eurorail)
+ sahypalarynda birem 
 hepde içi chat wagtlary bar hergün 5 sagatmy birzat, bolmasa hem mail 
 bilen sorap bilersiňiz, iki iş güni içinde jogap berýärler. (sales@eurail.com)
 
@@ -38,16 +39,18 @@ zatlarymy ýazmakçy. Ilki bilen rugzaga (sumka) nämeler alyşdyrdym,
 
 * Eşikler: gyşlyk geýip bolaýjak, şarf, şapka wş. 
 * Ýuwynmak üçin gerek zatlar, sabyn, şampun, diş pastasy, iň esasy hem sakgal syrýan maşynka :D
-* Kitap: Game of Thrones (A Song of Ice and Fire, Book One), nesip bolsa gutaryp bilerin ýolda okap 
-* Music: AC/DC butin albomlaryny download etdim, hemme aýdymlaryny diňlemekçi we birem Pink Floyd-dan hem öň diňlemedik albomlarymy aldym 
+* Kitap: [Game of Thrones](http://www.amazon.com/Game-Thrones-Song-Fire-Book/dp/0553573403) 
+(A Song of Ice and Fire, Book One), nesip bolsa gutaryp bilerin ýolda okap 
+* Music: [AC/DC](http://en.wikipedia.org/wiki/AC/DC) butin albomlaryny download etdim, 
+hemme aýdymlaryny diňlemekçi we birem [Pink Floyd](http://en.wikipedia.org/wiki/Pink_Floyd)-dan hem öň diňlemedik albomlarymy aldym 
 * Laptop: men munsyz gezip bilmeýän, iň agyram şul 
 * Fotoaparat 
 * Pasaport we Bilet 
 * We başgada birgiden akyr-ukur, karta, şarj enjamlar, kompass, fonarik, first aid üçin ýara bagy wş
 
-Bulardan başga hem telefonyma Bahn (Germaniýaň otly sistemasy) app gurdym, 
-ýewropadaky hemme şäherler arasy otly wagtlaryny tapsa bolýar, ýenede Free 
-Wi-Fi Finder we birnäçe şäher guide-leri bolan Lonely Planet app-lerini guryşdyrdym.
+Bulardan başga hem telefonyma [Bahn](http://www.bahn.com) (Germaniýaň otly sistemasy) [app](http://www.bahn.de/p/view/buchung/mobil/mobile-apps.shtml) gurdym, 
+ýewropadaky hemme şäherler arasy otly wagtlaryny tapsa bolýar, ýenede [Free Wi-Fi Finder](http://www.jiwire.com/iphone) 
+we birnäçe şäher guide-leri bolan Lonely Planet [app](http://www.lonelyplanet.com/apps-and-ebooks/)-lerini guryşdyrdym.
 
 Kyn, howply we şol bir wagtda gyzykly on bäş gün garaşýar..
 
