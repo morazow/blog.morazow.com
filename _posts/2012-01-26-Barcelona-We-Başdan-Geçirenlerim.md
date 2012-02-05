@@ -8,6 +8,8 @@ categories: [Gezelenç]
 {{ page.title }}
 ================
 
+<p class="meta">2012 ýylyň 26-njy ýanwary - Orta ýer deňizinde bir ýerler</p>
+
 Şäher Barada
 ------------
 

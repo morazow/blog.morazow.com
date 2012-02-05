@@ -8,6 +8,8 @@ categories: [Gezelenç]
 {{ page.title }}
 ================
 
+<p class="meta">2012 ýylyň 24-nji ýanwary - Lissabon</p>
+
 Giriş
 ------
 

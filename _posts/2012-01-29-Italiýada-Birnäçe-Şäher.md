@@ -7,6 +7,8 @@ lang: tm
 {{ page.title }}
 ================
 
+<p class="meta">2012 ýylyň 29-njy ýanwary - Milan-Zurich arasyndaky otlyda</p>
+
 Pisa
 ----
 
