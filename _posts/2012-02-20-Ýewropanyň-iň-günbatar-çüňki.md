@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ýewropanyň iň Günbatar Çüňki, Cabo da Roca
+title: Ýewropanyň iň günbatar çüňki, Cabo da Roca
 lang: tm
 categories: [Gezelenç]
 ---
