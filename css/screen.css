@@ -127,23 +127,33 @@ ul.posts span {
    float: left;
 }
 
-/*
+
 .site .footer {
 	font-size: 80%;
 	color: #666;
 	border-top: 4px solid #eee
 	margin-top: 2em;
 	overflow: hidden;
-}*/
+}
 
 .site .footer .contact {
-/*	float: left;
-	margin-right: 3em;*/
-        text-align:right;
+	float: left;
+	margin-right: 3em;
+        /*text-align:right;*/
 }
 
 .site .footer .contact a {
 	color: #8085C1;
+}
+
+.site .footer .rss {
+      margin-top: 0em;
+      margin-right: -.2em;
+      float: right;
+}
+
+.site .footer .rss img {
+        border: 0;
 }
 
 
