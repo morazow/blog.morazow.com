@@ -1,0 +1,29 @@
+---
+layout: default
+title: Madeira Adasyna Gezelenç
+lang: tm
+categories: [Gezelenç]
+---
+
+{{ page.title }}
+================
+
+<p class="meta">2012 ýylyň 17-nji maýy - Lissabon</p>
+
+Ýene bir gezelenç, Portugaliýa degişli bolan, okeýanyň ortasynda ýerleşen ada [Madeira](http://en.wikipedia.org/wiki/Madeira). Bu gezek kursdaşym, dostym Vaidas Brundza bilen gitdim. Üç gün ýaly gowy edip adany aýlandyk, ýaman gowy tebigaty bar ekeni. 
+
+Ilkinji gün, uçar bilen gelen şäherimiz [Funchal-a](http://en.wikipedia.org/wiki/Funchal) gezişdirdik, birnäçe ýerli tagamlary datdyk. Ikinji gün bolsa, awtoulag arenda alyp ada aýlanmaga gitdik. Şu ýerde okyjylara kömek bolar umudy bilen birnäçe zady bellemekçi, ilki bilen aeroportda awtoulag arenda almaň sebäbi iki esse baha pul tölemeli, iň gowysy awtobus bilen şäher merkezine gidip şol ýerden almak. Biz [Europcar](http://www.europcar.com/) awtoulag arenda hyzmatyny ulanypdyk, arzan we amatly. Hawa näme indi elimizde ulag bar adany bir başyndan aýlandyk. Ilki bilen iň beýik depesine tarap ýola çykdyk. 
+
+->![](/files/madeira/01.JPG)<-
+
+->![](/files/madeira/02.JPG)<-
+
+->![](/files/madeira/03.JPG)<-
+
+->![](/files/madeira/04.JPG)<-
+
+->![](/files/madeira/05.JPG)<-
+
+Şeýlelik bilen adanyň ýarysyna diýen ýaly aýlandyk. Gyzykly gezelençleriň biri boldy. 
+
+->![](/files/madeira/route.png)<-
