@@ -2,6 +2,15 @@
 layout: default
 ---
 
-<div id="post">
+<article id="{{ page.id }}">
+
+  <header>
+    <h1 class="article_title">{{ page.title }}</h1>
+    <h2 class="dateline">{{ page.date | date_to_long_string }}</h2>
+  </header>
+
+  <div class='article_body'>
     {{ content }}
-</div>
+  </div>
+
+</article>
