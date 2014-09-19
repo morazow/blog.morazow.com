@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Miradouro da Graça
-lang: tm
+category: tk
 ---
 
 {{ page.title }}

@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Madeira Adasyna Gezelenç
-lang: tm
-categories: [Gezelenç]
+category: tk
 ---
 
 {{ page.title }}

@@ -1,7 +1,7 @@
 ---
 layout: default
-lang: tm
 title: SOPA Barada Gysgaça
+category: tk
 ---
 
 {{ page.title }}

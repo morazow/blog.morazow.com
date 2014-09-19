@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Zurich-Vienna-Prague Gezelenç
-lang: tm
+category: tk
 ---
 
 {{ page.title }}

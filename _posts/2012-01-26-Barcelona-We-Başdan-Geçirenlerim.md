@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Barcelona We Başdan Geçirenlerim
-lang: tm
-categories: [Gezelenç]
+category: tk
 ---
 
 {{ page.title }}

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Italiýada Birnäçe Şäher
-lang: tm
+category: tk
 ---
 
 {{ page.title }}

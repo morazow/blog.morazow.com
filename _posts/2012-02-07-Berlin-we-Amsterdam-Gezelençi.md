@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Berlin we Amsterdam Gezelençi
-lang: tm
-categories: [Gezelenç]
+category: tk
 ---
 
 {{ page.title }}

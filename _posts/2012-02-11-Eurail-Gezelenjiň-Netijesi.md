@@ -1,8 +1,7 @@
 ---
 layout: default
-lang: tm
 title: Eurail Gezelenjiň Netijesi
-categories: [Gezelenç]
+category: tk
 ---
 
 {{ page.title }}

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: EMDC Courses
-lang: en
+category: en
 ---
 
 {{ page.title }}

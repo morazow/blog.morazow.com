@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Ýewropanyň iň günbatar çüňki, Cabo da Roca
-lang: tm
-categories: [Gezelenç]
+category: tk
 ---
 
 {{ page.title }}

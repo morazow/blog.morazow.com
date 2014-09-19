@@ -1,7 +1,7 @@
 ---
 layout: default
 title: EMDC Winter Event
-lang: en
+category: en
 ---
 
 {{ page.title }}

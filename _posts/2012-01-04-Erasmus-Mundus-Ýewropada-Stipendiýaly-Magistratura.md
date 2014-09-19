@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Erasmus Mundus - Ýewropada Magistratura (Stipendiýaly)
-lang: tm
+category: tk
 ---
 
 {{ page.title }}

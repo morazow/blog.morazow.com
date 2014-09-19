@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Eurail Bilen Gezelenç
-lang: tm
-categories: [Gezelenç]
+category: tk
 ---
 
 {{ page.title }}

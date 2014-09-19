@@ -1,8 +1,7 @@
 ---
 layout: default
-lang: en
 title: CS Papers - BitTorrent
-categories: [CS Papers]
+category: en
 ---
 
 # {{ page.title }}
