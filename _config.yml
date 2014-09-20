@@ -1,5 +1,6 @@
 name: SCALED VOID
 author: muhammet orazov
+url: http://morazow.github.io
 auto: true
 markdown: rdiscount
 pygments: true

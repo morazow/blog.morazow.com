@@ -4,5 +4,5 @@ title: index
 ---
 
 {% for post in site.categories.en limit:1 %}
-  {{ post.content }}
+  {% include fullpost.html %}
 {% endfor %}
