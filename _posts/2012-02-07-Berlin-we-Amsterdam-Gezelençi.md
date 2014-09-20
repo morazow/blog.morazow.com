@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Berlin we Amsterdam Gezelençi
 category: tk
 ---

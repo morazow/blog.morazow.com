@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: SOPA Barada Gysgaça
 category: tk
 ---

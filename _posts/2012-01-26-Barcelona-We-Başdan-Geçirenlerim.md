@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Barcelona We Başdan Geçirenlerim
 category: tk
 ---

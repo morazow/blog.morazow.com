@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Miradouro da Graça
 category: tk
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Ýewropanyň iň günbatar çüňki, Cabo da Roca
 category: tk
 ---

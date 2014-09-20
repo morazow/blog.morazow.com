@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Eurail Gezelenjiň Netijesi
 category: tk
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Zurich-Vienna-Prague Gezelenç
 category: tk
 ---

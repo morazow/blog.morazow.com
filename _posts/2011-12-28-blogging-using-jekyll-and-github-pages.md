@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Blogging Using Jekyll and Github Pages
 category: en
 ---

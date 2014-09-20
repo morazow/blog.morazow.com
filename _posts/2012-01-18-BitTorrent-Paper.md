@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: CS Papers - BitTorrent
 category: en
 ---

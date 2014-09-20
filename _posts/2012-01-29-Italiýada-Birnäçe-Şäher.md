@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Italiýada Birnäçe Şäher
 category: tk
 ---
