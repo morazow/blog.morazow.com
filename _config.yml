@@ -4,6 +4,7 @@ url: http://morazow.github.io
 auto: true
 markdown: rdiscount
 pygments: true
+permalink: /blog/:title.html
 google_analytics_code: UA-32783435-1
 gems:
   - jekyll-sitemap
