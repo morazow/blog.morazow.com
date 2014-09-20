@@ -104,6 +104,11 @@ nav .menu {
   margin-right: 0.3em;
 }
 
+nav .icons {
+  font-size: 0.9em;
+  float: right;
+}
+
 /* FOOTER */
 
 footer {
