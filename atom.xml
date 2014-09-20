@@ -4,22 +4,22 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Muhammet Orazow</title>
- <link href="http://morazow.github.com/atom.xml" rel="self"/>
- <link href="http://morazow.github.com/"/>
+ <title>Muhammet Orazov</title>
+ <link href="http://morazow.github.io/atom.xml" rel="self"/>
+ <link href="http://morazow.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://morazow.github.com/</id>
+ <id>http://morazow.github.io/</id>
  <author>
-   <name>Muhammet Orazow</name>
+   <name>Muhammet Orazov</name>
    <email>m.orazow@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ {% for post in site.categories.en %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://morazow.github.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://morazow.github.com{{ post.id }}</id>
+   <id>http://morazow.github.io{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
