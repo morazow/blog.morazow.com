@@ -2,8 +2,8 @@ name: SCALED VOID
 author: muhammet orazov
 url: http://morazow.github.io
 auto: true
-markdown: rdiscount
 pygments: true
+markdown: redcarpet
 permalink: /blog/:title.html
 google_analytics_code: UA-32783435-1
 gems:
