@@ -182,16 +182,11 @@ article blockquote {
 }
 
 article code {
-  font-size: 0.91em;
+  font-size: 0.90em;
   font-family: Menlo, Monaco, Consolas, monospace;
   padding: 0 0;
   white-space: pre-wrap;
   word-wrap: break-word;
-}
-
-article pre.code {
-  border: 1px solid #ddd;
-  background-color: #eef;
 }
 
 article pre code {
@@ -222,4 +217,8 @@ article h1 {
 
 article h2, h3, h4, h5 {
   padding-top: 0.5em;
+}
+
+article #backcolor {
+  background: rgba(255,230,0,0.5);
 }
