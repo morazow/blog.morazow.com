@@ -222,3 +222,8 @@ article h2, h3, h4, h5 {
 article #backcolor {
   background: rgba(255,230,0,0.5);
 }
+
+/* DISQUS */
+#disqus_thread {
+  margin-top: 1.5em;
+}
