@@ -43,7 +43,7 @@ That is we have data about user making transactions in particular timestamp
 (epoch) per place, which is geographical State.
 
 The main goal of this job is to count the number of transactions user made each
-day per state. In Scalding that would be one `map` and `groupBy` operations.
+day per state. In Scalding that would be `map` and `groupBy` operations.
 {% highlight scala %}
 pipe
   .map('TIMESTAMP -> 'DAY) { ts: Long => ts % (3600 * 24) }
@@ -55,7 +55,7 @@ One other requirement for the job is that it needs to store its results into
 `/year/month/day/state/` partitions.
 
 Depending on the incoming input data we need to partition the aggregated data.
-That is all transactions for a particular state should be in single bucket partition.
+That is, all the transactions for a particular state should be in single bucket partition.
 Input data may not contain all states, we should not create folders for not
 existing states.
 
@@ -70,7 +70,7 @@ tap from Scalding. Just change the Tsv tap with it,
 
 When running the job jar just give the base output path as  
 <span id=backcolor>`--output /year/month/day/`</span>  
-and it will create state folders inside above output path.
+and it will create state folders inside above path.
 
 However, this approach will create [lots
 files](http://blog.cloudera.com/blog/2009/02/the-small-files-problem/). Because
@@ -87,8 +87,9 @@ Yes, sure. When reducers are done processing the data and about to write, we
 want the data that reducer processed to be from one (or two) state at most. So
 it will create one or two files at most.
 
-So we want sort the data by state before writing. We can just add another
-`groupBy` operation in Scalding and do nothing in that grouping.
+To achieve this, sort the data by state using Hadoop power before writing.  In
+other words, we just add another `groupBy` operation in Scalding and do not perform 
+any aggregation operation in that grouping.
 {% highlight scala %}
 .groupBy('STATE) { g => g.pass }
 .write(TemplatedTsv(baseOutputPath, "%02d", 'STATE))
@@ -98,15 +99,16 @@ This solves many files problem by introducing another map reduce phase overhead.
 
 However, there is another problem with this solution. Because the data is not
 balanced with respect to state, some reducers will process only records (which
-is huge) belonging to a single state and delay the whole process.
+might be a lot) belonging to a single state and delay the whole process.
 
-Now the problem at hand is some reducers process larger percentage of the data
-and others smaller percentage. We want to distribute the larger part to several
-reducers instead so that overall running time is decreased.
+Now the problem at hand is that some reducers process considerably large
+percentage of the data while some others process very small percentage.
+Therefore, our next goal is to process the states with lots of data in parallel
+with several reducers instead of single reducer handling that state.
 
 After analyzing the incoming data or the results of the previous aggregation
 jobs, we can determine the states containing large portion of data. And
-distribute their load to several number of reducers (of our choice) with the
+distribute their load to number of reducers (of our choice) with the
 following trick,  
 {% highlight scala %}
 .map(('USERID, 'STATE) -> 'SORTER) { tuple: (String, Int) =>
@@ -123,17 +125,18 @@ following trick,
 .write(TemplatedTsv(baseOutputPath, "%02d", 'STATE))
 {% endhighlight %}
 
-For instance, we divide the state California's data into five reducers to process.
+For instance, we redistribute the California (6) state's data into five reducers.
 Therefore, instead of single reducer, five of them will be writing into output
-partition.
+partition thus creating file smaller files.
 
 ## Conclusion
 
 TemplatedTsv is great. However, it creates lots of small output files which
-considerably slows down the next job on the chain. However, the number of files
-can be reduced by sorting the data according to template before writing the tap.
-Furthermore, if the data is skewed you can apply some tricks to balance the
-templated data among reducers. This adds overhead of another map reduce phase. 
+affects negatively the performance of the next job on the chain. Fortunately, the
+number of files can be reduced by sorting the data according to template before
+writing the tap. Furthermore, if the data is skewed you can apply some tricks
+to balance the templated data among reducers. This adds overhead of another map
+reduce phase. 
 
 {% highlight scala %}
 val pipeSource = Tsv(InputSource, ('USERID, 'TIMESTAMP, 'STATE, 'TRANSACTIONS))
