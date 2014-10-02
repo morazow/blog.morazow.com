@@ -143,7 +143,7 @@ val pipeSource = Tsv(InputSource, ('USERID, 'TIMESTAMP, 'STATE, 'TRANSACTIONS))
 
 val pipeETL = pipeSource
   .read
-  .map('TIMESTAMP -> 'DAY) { ts: Long => ts % 3600 }
+  .map('TIMESTAMP -> 'DAY) { ts: Long => ts % (3600 * 24) }
   .groupBy('USERID, 'DAY, 'STATE) { g => g.size[Int]('COUNT) }
   .map(('HASHCODE, 'STATE) -> 'SORTER) { tuple: (String, Int) =>
     val modulo = tuple._2 match {
