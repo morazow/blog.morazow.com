@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Muhammet Orazov</title>
- <link href="http://morazow.github.io/atom.xml" rel="self"/>
- <link href="http://morazow.github.io/"/>
+ <link href="http://morazow.com/atom.xml" rel="self"/>
+ <link href="http://morazow.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://morazow.github.io/</id>
+ <id>http://morazow.com/</id>
  <author>
    <name>Muhammet Orazov</name>
    <email>m.orazow@gmail.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.categories.en %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://morazow.github.com{{ post.url }}"/>
+   <link href="http://morazow.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://morazow.github.io{{ post.id }}</id>
+   <id>http://morazow.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
