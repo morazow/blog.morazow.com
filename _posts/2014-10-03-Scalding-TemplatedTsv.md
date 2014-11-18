@@ -47,7 +47,7 @@ day per state. In Scalding that would be `map` and `groupBy` operations.
 {% highlight scala %}
 pipe
   .map('TIMESTAMP -> 'DAY) { ts: Long => ts % (3600 * 24) }
-  .groupBy('USERID, 'DAY, 'STATE) { g => g.size[Int]('COUNT) }
+  .groupBy('USERID, 'DAY, 'STATE) { g => g.size('COUNT) }
   .write(Tsv(baseOutputPath))
 {% endhighlight %}
 
