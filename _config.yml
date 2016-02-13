@@ -1,7 +1,7 @@
 name: SCALED VOID
 author: muhammet orazov
 url: http://morazow.com
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 permalink: /blog/:title.html
 google_analytics_code: UA-32783435-1
