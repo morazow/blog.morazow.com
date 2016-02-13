@@ -1,0 +1,12 @@
+blog:
+  build: .
+  command: ./scripts/start
+  volumes_from:
+    - gems
+  ports:
+    - "4000:4000"
+
+gems:
+  image: busybox
+  volumes:
+    - /gems
