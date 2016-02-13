@@ -16,7 +16,7 @@ amatlysy welisipet (tigir) bilen gitmek. Ilki Lissabondan Cascais-a çenli otly
 bilen gitdik. Ol ýerde hem mugt tigir berýän ýerler bar, şolaryň birinden tigirlerimizi 
 alyşdyryp ýola düşdük.
 
-->![](/files/cabo-da-roca/06.png)<-
+->![cabadaroca6](/files/cabo-da-roca/06.png)<-
 
 Bäş oglan bolyp gidipdik, içinde iň erbet sürýäni men. (:D) Sebäbi tigir ulanmanyma 
 eýýäm ýedi sekiz ýyl bolyp barýardy. Hatta ýolda iki gezek ýykyldym, birindi ýolda 
@@ -30,12 +30,12 @@ sowylyp ol ýerde hem bir salym okeýan tolkynlary synlap çägede oýnap bildik
 
 Portugaliýada gezip görer ýaly gaty kän ýer bar..
 
-![](/files/cabo-da-roca/01.JPG)
+![cabadaroca1](/files/cabo-da-roca/01.JPG)
 
-![](/files/cabo-da-roca/02.JPG)
+![cabadaroca2](/files/cabo-da-roca/02.JPG)
 
-![](/files/cabo-da-roca/03.JPG)
+![cabadaroca3](/files/cabo-da-roca/03.JPG)
 
-![](/files/cabo-da-roca/04.JPG)
+![cabadaroca4](/files/cabo-da-roca/04.JPG)
 
-![](/files/cabo-da-roca/05.JPG)
+![cabadaroca5](/files/cabo-da-roca/05.JPG)

@@ -26,11 +26,11 @@ düşürişdirip bir iki sagat aýlandym.
 
 ![depe](/files/barcelona/03.JPG)
 
-![](/files/barcelona/04.JPG)
+![sutunler1](/files/barcelona/04.JPG)
 
-![](/files/barcelona/05.JPG)
+![gummez](/files/barcelona/05.JPG)
 
-![](/files/barcelona/06.JPG)
+![sutunler2](/files/barcelona/06.JPG)
 
 Pulymyň Ogurlanmagy
 -------------------

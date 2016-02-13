@@ -9,7 +9,7 @@ category: tk
 
 <p class="meta">2012-njy ýylyň 11-nji fewraly - Lissabon</p>
 
-![](/files/yollar.png)
+![yollar](/files/yollar.png)
 
 Şeýlelik bilen 15 günlik gezelenji hem gutardym. Käwagtlar ýadadym, üşedim ýöne şonda hem gaty 
 gyzyklydy. 

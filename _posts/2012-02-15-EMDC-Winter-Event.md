@@ -26,6 +26,6 @@ One thing I really liked was, seniors wore t-shirts while they were giving prese
 
 maybe I will use it in this blog as a tagline. 
 
-![](/files/emdc.jpg)
+![emdc](/files/emdc.jpg)
 
 [1]:http://en.wikipedia.org/wiki/Paxos_%28computer_science%29
