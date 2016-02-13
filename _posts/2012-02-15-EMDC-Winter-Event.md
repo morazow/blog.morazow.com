@@ -10,7 +10,7 @@ category: en
 <p class="meta">15 February 2012 - Sintra</p>
 
 After traveling around the Europe, I have eventually arrived to Lisbon. There was an 
-[EMDC](http://www.kth.se/en/studies/programmes/master/em/emdc) event 
+[EMDC](https://www.kth.se/en/studies/master/joint/emdc) event 
 at [Sintra](http://en.wikipedia.org/wiki/Sintra) that I should attend. I was excited since it would 
 be gathering whole actors of this program. Some guys from previous batch, guys from Barcelona and Lisbon 
 tracks and of course professors and some invited speakers were there.
