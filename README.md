@@ -1,6 +1,6 @@
 ## Personal Website
 [![Build Status](http://img.shields.io/travis/morazow/morazow.github.io.svg?style=flat-square)][travis]
-[![Dependency Status](https://gemnasium.com/morazow/morazow.github.io.svg?style=flat-square)][gemnasium]
+[![Dependency Status](https://img.shields.io/gemnasium/morazow/morazow.github.io.svg?style=flat-square)][gemnasium]
 
 This is a source for personal website of [Muhammet Orazov](http://morazow.com).
 
