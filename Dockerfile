@@ -10,7 +10,7 @@ RUN apt-get update \
     libyaml-dev libreadline-dev libxml2-dev libxslt1-dev
 
 ## Needed for pygments
-RUN apt-get install python
+RUN apt-get -y install python
 
 ## Install ruby
 RUN wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.3.tar.gz
@@ -27,5 +27,5 @@ ENV BUNDLE_PATH=/gems
 RUN apt-get clean && apt-get purge \
       && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY . /tmp/blog
+#COPY . /tmp/blog
 WORKDIR /tmp/blog
