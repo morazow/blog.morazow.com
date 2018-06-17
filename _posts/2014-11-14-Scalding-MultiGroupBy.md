@@ -24,9 +24,9 @@ found
 
 Let's imagine we have two data sources. The first data contains the purchase record of
 the users per time and per geographical State. This data is formatted as following,
-<span id=backcolor>`<user_id, timestamp, state, purchases>`</span>. The second
+<span id="backcolor">`<user_id, timestamp, state, purchases>`</span>. The second
 data contains the user demographic information. For this particular example, it
-only contains user age, <span id=backcolor>`<user_id, age>`</span>
+only contains user age, <span id="backcolor">`<user_id, age>`</span>
 
 The main goal of this map reduce job is to count the number of purchases per
 state and per age group. 

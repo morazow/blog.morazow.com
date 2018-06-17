@@ -37,10 +37,10 @@ used as input for other jobs which run weekly or monthly.
 
 ## The Problem
 
-Let's imagine the input data is formatted as, 
-<span id=backcolor>`<user_id, timestamp, state, transactions>`</span>  
-That is we have data about user making transactions in particular timestamp
-(epoch) per place, which is geographical State.
+Let's imagine the input data is formatted as, <span id="backcolor">`<user_id,
+timestamp, state, transactions>`</span>  That is we have data about user making
+transactions in particular timestamp (epoch) per place, which is geographical
+State.
 
 The main goal of this job is to count the number of transactions user made each
 day per state. In Scalding that would be `map` and `groupBy` operations.
@@ -68,9 +68,9 @@ tap from Scalding. Just change the Tsv tap with it,
   .write(TemplatedTsv(baseOutputPath, "%02d", 'STATE))
 {% endhighlight %}
 
-When running the job jar just give the base output path as  
-<span id=backcolor>`--output /year/month/day/`</span>  
-and it will create state folders inside above path.
+When running the job jar just give the base output path as  <span
+id="backcolor">`--output /year/month/day/`</span>  and it will create state
+folders inside above path.
 
 However, this approach will create [lots
 files](http://blog.cloudera.com/blog/2009/02/the-small-files-problem/). Because
