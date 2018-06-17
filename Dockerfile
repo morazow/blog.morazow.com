@@ -1,31 +1,24 @@
-FROM ubuntu:14.04
+FROM ruby:2.5.1-alpine
 MAINTAINER m.orazow <m.orazow@gmail.com>
 
-## Install essentials
-RUN apt-get update \
-  && DEBIAN_FRONTEND=noninteractive apt-get -y install \ 
-    build-essential \
-    wget curl nodejs \
-    openssl libssl-dev zlib1g-dev \
-    libyaml-dev libreadline-dev libxml2-dev libxslt1-dev
+RUN apk add --no-cache \
+      build-base
 
-## Needed for pygments
-RUN apt-get -y install python
+ENV BLOG_PATH /tmp/blog
 
-## Install ruby
-RUN wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.3.tar.gz
-RUN tar -xzvf ruby-2.2.3.tar.gz
-RUN cd ruby-2.2.3 && ./configure --disable-install-doc && make && sudo make install
+RUN mkdir -p $BLOG_PATH
+
+WORKDIR $BLOG_PATH
+
+ADD Gemfile* $BLOG_PATH/
 
 ## Install bundler & gems
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+
 RUN gem install bundler --no-document
 
-ENV BUNDLE_PATH=/gems
+RUN bundle install
 
-## Cleanup
-RUN apt-get clean && apt-get purge \
-      && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+EXPOSE 4000
 
-#COPY . /tmp/blog
-WORKDIR /tmp/blog
+ENTRYPOINT bundle exec jekyll serve --host=0.0.0.0 --profile --force_polling
