@@ -1,9 +1,18 @@
 language: ruby
-script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --url-ignore /linkedin\.com/
+
 env:
   global:
     # speeds up installation of html-proofer
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+addons:
+  apt:
+    packages:
+      # required to avoid SSL errors
+      - libcurl4-openssl-dev
+
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --url-ignore /linkedin\.com/
+
 sudo: false
