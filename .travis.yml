@@ -1,5 +1,8 @@
 language: ruby
 
+cache:
+  bundler: true
+
 env:
   global:
     # speeds up installation of html-proofer
@@ -9,10 +12,10 @@ addons:
   apt:
     packages:
       # required to avoid SSL errors
+      - ca-certificates
       - libcurl4-openssl-dev
 
 script:
+  - bundle install
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --url-ignore /linkedin\.com/
-
-sudo: false
