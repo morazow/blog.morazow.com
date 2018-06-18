@@ -2,21 +2,15 @@
 # Makefile
 #
 
-NS = morazow
-REPO = blog
 NAME = blog
-PORTS = -p 4000:4000
-VOLUMES = -v "$$PWD":/tmp/blog
 
-all: build run
+all: serve
 
 build: Dockerfile
-	docker build --rm --force-rm -t $(NS)/$(REPO) .
+	docker-compose run --rm $(NAME) build
+	docker-compose run --rm --entrypoint htmlproofer $(NAME) ./_site --url-ignore /linkedin\.com/
 
-run: build
-	docker run --rm --name $(NAME) $(PORTS) $(VOLUMES) $(NS)/$(REPO) 
+serve:
+	docker-compose up
 
-rm:
-	docker rm -f $(NAME)
-
-.PHONY: all build run
+.PHONY: all build serve

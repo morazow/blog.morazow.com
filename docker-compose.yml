@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  blog:
+    build:
+      context: .
+    image: morazow/blog
+    container_name: blog
+    volumes:
+      - .:/tmp/blog
+    ports:
+      - 4000:4000
+    command: serve --livereload --future --force_polling --host 0.0.0.0
