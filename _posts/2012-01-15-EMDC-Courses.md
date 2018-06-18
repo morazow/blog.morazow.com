@@ -14,7 +14,7 @@ Introduction
 
 On the summer of 2011 after graduating from [METU](http://www.metu.edu.tr) 
 Computer Engineering, I have been accepted to European Masters in Distributed Computing 
-([EMDC](https://www.kth.se/en/studies/master/joint/emdc))
+([EMDC](https://www.ac.upc.edu/en/academics/master/master-emdc-european-master-in-distributed-computing)
 joint Erasmus Mundus programme between 
 [KTH Royal Institute of Technology (KTH)](http://www.kth.se/) in Sweden, 
 [Instituto Superior Técnico in Portugal (IST)](http://www.ist.utl.pt/) and 

@@ -49,8 +49,8 @@ hemme aýdymlaryny diňlemekçi we birem [Pink Floyd](http://en.wikipedia.org/wi
 * Pasaport we Bilet 
 * We başgada birgiden akyr-ukur, karta, şarj enjamlar, kompass, fonarik, first aid üçin ýara bagy wş
 
-Bulardan başga hem telefonyma [Bahn](http://www.bahn.com) (Germaniýaň otly sistemasy) [app](http://www.bahn.de/p/view/buchung/mobil/mobile-apps.shtml) gurdym, 
-ýewropadaky hemme şäherler arasy otly wagtlaryny tapsa bolýar, ýenede [Free Wi-Fi Finder](http://www.jiwire.com/iphone) 
+Bulardan başga hem telefonyma [Bahn](http://www.bahn.com) (Germaniýaň otly sistemasy) [app](https://www.bahn.com/en/view/booking-information/booking/db-navigator-app.shtml) gurdym, 
+ýewropadaky hemme şäherler arasy otly wagtlaryny tapsa bolýar, ýenede [Free Wi-Fi Finder](https://itunes.apple.com/us/app/free-wifi-finder/id411134124) 
 we birnäçe şäher guide-leri bolan Lonely Planet [app](http://www.lonelyplanet.com/apps-and-ebooks/)-lerini guryşdyrdym.
 
 Kyn, howply we şol bir wagtda gyzykly on bäş gün garaşýar..

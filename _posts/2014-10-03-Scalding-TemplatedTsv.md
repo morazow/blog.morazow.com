@@ -62,7 +62,7 @@ existing states.
 ## The Solution
 
 To achieve the goal we can use
-[TemplatedTsv](http://twitter.github.io/scalding/com/twitter/scalding/TemplatedTsv.html)
+[TemplatedTsv](https://twitter.github.io/scalding/api/#com.twitter.scalding.TemplatedTsv)
 tap from Scalding. Just change the Tsv tap with it,
 {% highlight scala %}
   .write(TemplatedTsv(baseOutputPath, "%02d", 'STATE))

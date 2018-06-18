@@ -17,7 +17,7 @@ gyzyklydy.
 Birnäçe agza sorapdy wiza gerekmi ýa diňe [Eurail](http://www.eurail.com/home) bilet alsaň bolýamy diýip, "Wiza gerek"!
 Öňüräk mail bilen özüm hem soradym şu ýerik ýazjak,
 "The Eurail Pass is no visa; travelers are responsible for ensuring that they have all necessary travel documents and visas." Ýagny bilet satyn alanyňyzdan soň hökman haýsam bolsa bir şengen ýurtlaryndan turist wiza alaýmaly. Ýöne ýene 
-gowy habar, eger haýsam bolsa bir Türkmenistan raýaty Türkiýede (ýada başga haýsam bolsa bir ýewropa ýurdynda) alty aýdan köp ýaşan bolsa arkaýyn [Interrail](http://www.interrailnet.com/) (bu Eurail-dan arzan) bileti satyn alyp, ýanyna pasaportyny we ikametini alyp arkaýyn gezip biler. Sebäbi Türkiýani hem ýewropa zonasynda diýip hasaplapdyrlar.
+gowy habar, eger haýsam bolsa bir Türkmenistan raýaty Türkiýede (ýada başga haýsam bolsa bir ýewropa ýurdynda) alty aýdan köp ýaşan bolsa arkaýyn [Interrail](https://www.interrail.eu/en) (bu Eurail-dan arzan) bileti satyn alyp, ýanyna pasaportyny we ikametini alyp arkaýyn gezip biler. Sebäbi Türkiýani hem ýewropa zonasynda diýip hasaplapdyrlar.
 
 Kiçijek Maslahatlarym
 ---------------------

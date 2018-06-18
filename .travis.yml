@@ -1,10 +1,9 @@
 language: ruby
-#rvm: ## .ruby-version exists
-#  - 2.2
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --url-ignore /linkedin\.com/
 env:
   global:
+    # speeds up installation of html-proofer
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 sudo: false

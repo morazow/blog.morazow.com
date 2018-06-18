@@ -9,11 +9,13 @@ category: en
 
 <p class="meta">15 February 2012 - Sintra</p>
 
-After traveling around the Europe, I have eventually arrived to Lisbon. There was an 
-[EMDC](https://www.kth.se/en/studies/master/joint/emdc) event 
-at [Sintra](http://en.wikipedia.org/wiki/Sintra) that I should attend. I was excited since it would 
-be gathering whole actors of this program. Some guys from previous batch, guys from Barcelona and Lisbon 
-tracks and of course professors and some invited speakers were there.
+After traveling around the Europe, I have eventually arrived to Lisbon. There
+was an
+[EMDC](https://www.ac.upc.edu/en/academics/master/master-emdc-european-master-in-distributed-computing)
+event at [Sintra](http://en.wikipedia.org/wiki/Sintra) that I should attend. I
+was excited since it would be gathering whole actors of this program. Some guys
+from previous batch, guys from Barcelona and Lisbon tracks and of course
+professors and some invited speakers were there.
 
 Sintra was great place to have such an event. Meeting fellow EMDC-ers and talking, getting tips from seniors 
 was another activity I enjoyed very much. Moreover, we had some scientific talks about 
