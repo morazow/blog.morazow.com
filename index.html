@@ -3,6 +3,6 @@ layout: default
 title: index
 ---
 
-{% for post in site.categories.en limit:1 %}
-  {% include fullpost.html %}
+{% for post in site.posts limit:1 %}
+    {% include fullpost.html %}
 {% endfor %}
