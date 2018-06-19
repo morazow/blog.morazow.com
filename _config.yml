@@ -5,6 +5,17 @@ highlighter: rouge
 markdown: kramdown
 permalink: /blog/:title.html
 google_analytics_code: UA-32783435-1
-gems:
+plugins:
   - jekyll-sitemap
-exclude: [vendor]
+exclude:
+  - .gitignore
+  - .editorconfig
+  - .travis.yml
+  - .ruby-version
+  - README.md
+  - LICENSE.md
+  - Makefile
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
