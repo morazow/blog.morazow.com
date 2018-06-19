@@ -18,7 +18,7 @@ Computer Engineering, I have been accepted to European Masters in Distributed Co
 joint Erasmus Mundus programme between 
 [KTH Royal Institute of Technology (KTH)](http://www.kth.se/) in Sweden, 
 [Instituto Superior Técnico in Portugal (IST)](http://www.ist.utl.pt/) and 
-[Universitat Politècnica de Catalunya (UPC)](http://www.upc.edu/) in Spain. 
+[Universitat Politècnica de Catalunya (UPC)](http://www.upc.edu/en) in Spain. 
 It is a two-year Master's programme including compulsory mobility for the students.
 
 I have been accepted to IST - KTH track, which means I will be studying in the Instituto 
