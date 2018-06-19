@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
         <title>
-          {% if page.title == 'index' %}
-            scaled void
-          {% else %}
-            {{ page.title }} &middot; scaled void
-          {% endif %}
+            {% if page.title == 'index' %}
+                scaled void
+            {% else %}
+                {{ page.title }} &middot; scaled void
+            {% endif %}
         </title>
 
-	<meta name="author" content="Muhammet Orazov"/>
+        <meta name="author" content="Muhammet Orazov"/>
+
         <!-- Enable responsiveness on mobile devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-	<link href="http://feeds.feedburner.com/morazow" rel="alternate" title="Muhammet Orazov" type="application/atom+xml" />
+        <link href="http://feeds.feedburner.com/morazow" rel="alternate" title="Muhammet Orazov" type="application/atom+xml" />
 
         <!-- font awesome icons!! -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- syntax highlighting CSS -->
-	<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-	<!-- Homepage CSS -->
-	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+        <!-- Homepage CSS -->
+        <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
         <!-- Google Analytics -->
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', '{{ site.google_analytics_code }}']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  	})();
-	</script>
-  </head>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', '{{ site.google_analytics_code }}']);
+            _gaq.push(['_trackPageview']);
 
-  <body>
-    <section id="container">
-      {% include masthead.html %}
-      <section id="content">
-        {{ content }}
-      </section>
-      {% include comments.html %}
-      {% include footer.html %}
-    </section>
-  </body>
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+        <section id="container">
+            {% include masthead.html %}
+        <section id="content">
+            {{ content }}
+        </section>
+            {% include comments.html %}
+            {% include footer.html %}
+        </section>
+    </body>
 
 </html>

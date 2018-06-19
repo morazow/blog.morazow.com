@@ -1,12 +1,12 @@
 ---
 layout: default
-title: archive
+title: home
 ---
 
 <section id="archive">
-    <h1>All Blog Posts</h1>
+    <h1>Recent Blog Posts</h1>
     <ul class="posts">
-        {% for post in site.posts %}
+        {% for post in site.posts limit:5 %}
             <li>
                 <span>{{ post.date | date_to_string }}</span>
                 &raquo;
@@ -15,3 +15,4 @@ title: archive
         {% endfor %}
     </ul>
 </section>
+
