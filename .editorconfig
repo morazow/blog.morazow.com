@@ -15,6 +15,9 @@ max_line_length = 98
 [*.{yaml,yml}]
 indent_size = 2
 
+[{*.rb,*.rake,Rakefile,Gemfile}]
+indent_size = 2
+
 [*.md]
 # Preserve trailing whitespace for Markdown files
 trim_trailing_whitespace = false

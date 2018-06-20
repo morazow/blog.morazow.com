@@ -8,9 +8,9 @@ services:
     image: morazow/blog
     container_name: blog
     volumes:
-      - .:/tmp/blog
+      - ./:/tmp/blog
     ports:
       - 4000:4000
     environment:
       - JEKYLL_ENV=development
-    command: serve --livereload --future --force_polling --host 0.0.0.0
+    command: jekyll serve --livereload --future --force_polling --host 0.0.0.0

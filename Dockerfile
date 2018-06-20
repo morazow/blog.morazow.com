@@ -5,11 +5,11 @@ RUN apk add --no-cache \
       libcurl          \
       build-base
 
-ENV BLOG_PATH /tmp/blog
-RUN mkdir -p $BLOG_PATH
-WORKDIR $BLOG_PATH
+RUN mkdir -p /tmp/blog
+VOLUME /tmp/blog
+WORKDIR /tmp/blog
 
-ADD Gemfile* $BLOG_PATH/
+ADD Gemfile* /tmp/blog/
 
 ## Install bundler & gems
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
@@ -18,4 +18,4 @@ RUN bundle install
 
 EXPOSE 4000
 
-ENTRYPOINT ["/usr/local/bin/bundle", "exec", "jekyll"]
+ENTRYPOINT ["/usr/local/bin/bundle", "exec"]

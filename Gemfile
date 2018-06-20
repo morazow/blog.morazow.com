@@ -1,4 +1,10 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'github-pages', '~> 186'
-gem 'html-proofer', '~> 3.9.1'
+source 'https://rubygems.org' do
+  gem 'html-proofer'
+  gem 'jekyll'
+  gem 'jekyll-sitemap'
+  gem 'rake'
+  gem 'rubocop'
+  gem 'yaml-lint'
+end

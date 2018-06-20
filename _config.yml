@@ -17,6 +17,7 @@ exclude:
   - README.md
   - LICENSE.md
   - Makefile
+  - Rakefile
   - Dockerfile
   - docker-compose.yml
   - Gemfile
