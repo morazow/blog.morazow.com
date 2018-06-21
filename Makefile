@@ -7,7 +7,7 @@ NAME = blog
 
 all: serve
 
-image: Dockerfile
+image: docker/jekyll/Dockerfile
 	docker-compose build
 
 build: image
@@ -22,7 +22,7 @@ serve:
 	docker-compose up
 
 clean:
-	docker-compose run --rm $(NAME) rake jekyll:clean
 	rm -rf _site
+	rm -rf docker/nginx/html
 
 .PHONY: all image build serve

@@ -2,3 +2,4 @@ _site/
 .sass_cache/
 Gemfile.lock
 tmp/.htmlproofer
+docker/nginx/html
