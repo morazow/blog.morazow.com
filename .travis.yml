@@ -18,7 +18,25 @@ cache:
   directories:
     - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
-script:
-  - bundle install
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --url-ignore /linkedin\.com/
+jobs:
+  include:
+    - stage: "Bundle Install"
+      script: bundle install
+
+    - stage: "Jekyll Build"
+      script: bundle exec jekyll build
+
+    - stage: "Lint Ruby Files"
+      script: bundle exec rake linter:ruby
+
+    - stage: "Lint YAML Files"
+      script: bundle exec rake linter:yaml
+
+    - stage: "Lint Markdown Files"
+      script: bundle exec rake linter:markdown
+
+    - stage: "Run HTML Proofer Local"
+      script: bundle exec rake proofer:local
+
+    - stage: "Run HTML Proofer Remote"
+      script: bundle exec rake proofer:remote
