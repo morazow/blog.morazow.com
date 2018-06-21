@@ -1,8 +1,5 @@
 language: ruby
 
-cache:
-  bundler: true
-
 env:
   global:
     - JEKYLL_ENV=production
@@ -15,6 +12,11 @@ addons:
       # required to avoid SSL errors
       - ca-certificates
       - libcurl4-openssl-dev
+
+cache:
+  bundler: true
+  directories:
+    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
 script:
   - bundle install

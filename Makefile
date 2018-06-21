@@ -14,7 +14,8 @@ build: image
 	docker-compose run --rm $(NAME) rake linter:ruby
 	docker-compose run --rm $(NAME) rake linter:yaml
 	docker-compose run --rm $(NAME) rake linter:markdown
-	docker-compose run --rm --entrypoint htmlproofer $(NAME) ./_site --url-ignore /linkedin\.com/
+	docker-compose run --rm $(NAME) rake proofer:local
+	docker-compose run --rm $(NAME) rake proofer:remote
 
 serve:
 	docker-compose up

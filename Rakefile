@@ -30,7 +30,7 @@ namespace 'linter' do
     sh cmd
   end
 
-  desc 'Run all tasks in this namespace'
+  desc 'Run all linter tasks'
   task all: %i[ruby yaml markdown]
 
   desc 'Lint ruby files syntax'
@@ -53,5 +53,36 @@ namespace 'linter' do
       escaped = Shellwords.escape(directory)
       run_command "mdl #{escaped}"
     end
+  end
+end
+
+namespace 'proofer' do
+  def run_html_proofer!(opts)
+    HTMLProofer.check_directory('./_site', opts).run
+  end
+
+  desc 'Run all html proofer tasks'
+  task all: %i[local remote]
+
+  desc 'Run html proofer for local'
+  task local: %i[build] do
+    opts = {
+      disable_external: true,
+      assume_extension: true
+    }
+    run_html_proofer!(opts)
+  end
+
+  desc 'Run html proofer for remote'
+  task remote: %i[build] do
+    opts = {
+      external_only: true,
+      assume_extension: true,
+      http_status_ignore: [999],
+      cache: { timeframe: '6w' },
+      hydra: { max_concurrency: 10 },
+      internal_domains: ['www.morazow.com']
+    }
+    run_html_proofer!(opts)
   end
 end
