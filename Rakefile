@@ -56,6 +56,7 @@ namespace 'linter' do
   end
 end
 
+# rubocop:disable BlockLength
 namespace 'proofer' do
   def run_html_proofer!(opts)
     HTMLProofer.check_directory('./_site', opts).run
@@ -87,3 +88,4 @@ namespace 'proofer' do
     run_html_proofer!(opts)
   end
 end
+# rubocop:enable BlockLength
