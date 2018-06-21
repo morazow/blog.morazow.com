@@ -81,7 +81,7 @@ namespace 'proofer' do
       external_only: true,
       assume_extension: true,
       http_status_ignore: [999],
-      cache: { timeframe: '6w' },
+      cache: { timeframe: '1w' },
       hydra: { max_concurrency: 10 },
       internal_domains: ['www.morazow.com']
     }
