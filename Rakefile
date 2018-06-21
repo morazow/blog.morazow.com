@@ -67,6 +67,7 @@ namespace 'proofer' do
   desc 'Run html proofer for local'
   task local: %i[build] do
     opts = {
+      check_img_http: true,
       disable_external: true,
       assume_extension: true
     }
