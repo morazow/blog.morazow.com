@@ -2,6 +2,7 @@
 # Makefile
 #
 
+# Service name in docker-compose.yml
 NAME = blog
 
 all: serve
