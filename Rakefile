@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'jekyll'
+require 'shellwords'
 require 'html-proofer'
 require 'rubocop/rake_task'
 
@@ -30,7 +31,7 @@ namespace 'linter' do
   end
 
   desc 'Run all tasks in this namespace'
-  task all: %i[ruby yaml]
+  task all: %i[ruby yaml markdown]
 
   desc 'Lint ruby files syntax'
   RuboCop::RakeTask.new(:ruby).tap do |task|
@@ -41,5 +42,16 @@ namespace 'linter' do
   task yaml: %i[] do
     files = Dir.glob('*.y*ml', File::FNM_DOTMATCH)
     run_command "yaml-lint #{files.join(' ')}" unless files.empty?
+  end
+
+  desc 'Lint markdown files syntax'
+  task markdown: %i[] do
+    md_files = Dir.glob('**/*.md')
+    md_files.reject! { |dir| dir.start_with? 'vendor/' }
+    puts "Looking at #{md_files.join ', '}"
+    md_files.each do |directory|
+      escaped = Shellwords.escape(directory)
+      run_command "mdl #{escaped}"
+    end
   end
 end

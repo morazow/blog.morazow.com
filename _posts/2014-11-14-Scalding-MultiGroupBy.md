@@ -1,46 +1,47 @@
 ---
 layout: post
-title: Using MultiGroupBy with Scalding 
+title: Using MultiGroupBy with Scalding
 category: en
 tags: scalding cascading hadoop bigdata
 location: Nuremberg
 comments: true
 ---
 
-{{ page.title }}
-================
+# {{ page.title }}
 
 <p class="meta">18 November 2014 - Nuremberg</p>
 
 ## TL;DR
+
 Scalding `.groupBy` and `.join` operations can be combined into single operation
 using [MultiGroupBy](https://github.com/LiveRamp/cascading_ext#multigroupby)
 from [Cascading extension](https://github.com/LiveRamp/cascading_ext), which
 improves the job performance. Scalding job example using MultiGroupBy can be
-found
-[here](https://github.com/morazow/ScaldingExamples/tree/master/src/main/scala/com/morazow/multigroupby).
+found [here][scaldingexamples].
 
 ## Introduction
 
-Let's imagine we have two data sources. The first data contains the purchase record of
-the users per time and per geographical State. This data is formatted as following,
-<span id="backcolor">`<user_id, timestamp, state, purchases>`</span>. The second
-data contains the user demographic information. For this particular example, it
-only contains user age, <span id="backcolor">`<user_id, age>`</span>
+Let's imagine we have two data sources. The first data contains the purchase
+record of the users per time and per geographical State. This data is formatted
+as following, <span id="backcolor">`<user_id, timestamp, state,
+purchases>`</span>. The second data contains the user demographic information.
+For this particular example, it only contains user age, <span
+id="backcolor">`<user_id, age>`</span>
 
 The main goal of this map reduce job is to count the number of purchases per
-state and per age group. 
+state and per age group.
 
 In Scalding we can implement this job as,
+
 {% highlight scala %}
 class MultiGroupByExample1(args: Args) extends Job(args) {
   // ...
 
-  val Purchases = 
+  val Purchases =
     Tsv(purchasesPath, ('USERID, 'TIMESTAMP, 'STATE, 'PURCHASE))
     .read
 
-  val UserAges = 
+  val UserAges =
     Tsv(userAgesPath, ('USERID, 'AGE))
     .read
 
@@ -59,8 +60,8 @@ This is elegant and concise solution however it is not very efficient.
 In Scalding each `.groupBy` and `.join` operation introduces another map reduce
 phase.  That is with the code above, data will be shuffled, sorted and reduced
 three times before finishing the computation. Therefore, when there are very
-<span id=backcolor>big data</span> to be processed, the overall job performance will be very
-inefficient. 
+<span id="backcolor">big data</span> to be processed, the overall job performance
+will be very inefficient.
 
 Luckily we can do better!
 
@@ -71,20 +72,20 @@ sources. Fortunately, it can be achieved using **MultiGroupBy** operation. In
 the rest of this blog I will show how to use MultiGroupBy in Scalding by
 reducing the three steps from above job into single map reduce phase.
 
->Recently I was reading [tips for optimizing Cascading
+> Recently I was reading [tips for optimizing Cascading
 flows](http://nathanmarz.com/blog/tips-for-optimizing-cascading-flows.html) and
 recalled [Cascading extensions](https://github.com/LiveRamp/cascading_ext)
 project which I saw several months ago.  It offers additional operations on top
-of Cascading. Here I will only show MultiGroupBy (maybe BloomJoin in some other 
+of Cascading. Here I will only show MultiGroupBy (maybe BloomJoin in some other
 blog post). It is great!
 
-The API of MultiGroupBy is defined
-[here](https://github.com/LiveRamp/cascading_ext/blob/master/src/main/java/com/liveramp/cascading_ext/assembly/MultiGroupBy.java#L35-L55).
-It accepts two pipes, two fields definitions as joining fields, renamed join field(s)
-and aggregation operation. We will have to write Cascading multi buffer operation 
-in Java, but it is worth the effort. 
+The API of MultiGroupBy is defined [here][cascadingext] It accepts two pipes,
+two fields definitions as joining fields, renamed join field(s) and aggregation
+operation. We will have to write Cascading multi buffer operation in Java, but
+it is worth the effort.
 
 The updated Scalding job will be as below,
+
 {% highlight scala linenos %}
 import com.liveramp.cascading_ext.assembly.MultiGroupBy
 
@@ -103,12 +104,14 @@ class MultiGroupByExample2(args: Args) extends Job(args) {
 }
 {% endhighlight %}
 
-Because MultiGroupBy performs join operation, it keeps the join fields. Therefore,
-on line 13 we just discard *'USERID* column.
+Because MultiGroupBy performs join operation, it keeps the join fields.
+Therefore, on line 13 we just discard *'USERID* column.
 
->Please notice the smooth Scala/Scalding and Java/Cascading interop. *new Fields("USERID")* and *'USERID* are the same.
+> Please notice the smooth Scala/Scalding and Java/Cascading interop. *new
+> Fields("USERID")* and *'USERID* are the same.
 
 Next we write our multi buffer operation, **MyMultiBufferOp**.
+
 {% highlight java linenos %}
 import com.liveramp.cascading_ext.multi_group_by.MultiBuffer;
 import org.apache.commons.collections.keyvalue.MultiKey;
@@ -163,17 +166,14 @@ public class MyMultiBufferOp extends MultiBuffer {
 }
 {% endhighlight %}
 
-On lines 11 & 23 we obtain tuple iterators for the two data sources. Then we keep
-updating the hashmap `HashMap(<state, age>, count)` until exhausting iterators on
-lines 30-36. Finally, on lines 42-49 we emit the hashmap contents as results for
-this buffer operation.
+On lines 11 & 23 we obtain tuple iterators for the two data sources. Then we
+keep updating the hashmap `HashMap(<state, age>, count)` until exhausting
+iterators on lines 30-36. Finally, on lines 42-49 we emit the hashmap contents
+as results for this buffer operation.
 
-You can find the full code
-[here](https://github.com/morazow/ScaldingExamples/tree/master/src/main/scala/com/morazow/multigroupby)
-and
-[here](https://github.com/morazow/ScaldingExamples/tree/master/src/main/java/com/morazow/multigroupby)
-multi buffer operation. In order to test the MultiGroupBy example you will have
-to assembly fat jar and run it on Hadoop environment. 
+You can find the full code [here][multiscala] and [here][multijava] multi buffer
+operation. In order to test the MultiGroupBy example you will have to assembly
+fat jar and run it on Hadoop environment.
 
 ## Conclusion
 
@@ -185,3 +185,8 @@ I strongly believe this operation should be default in both Cascading and
 Scalding.
 
 {% include tweet.html %}
+
+[scaldingexamples]: https://github.com/morazow/ScaldingExamples/tree/master/src/main/scala/com/morazow/multigroupby
+[multiscala]: https://github.com/morazow/ScaldingExamples/tree/master/src/main/scala/com/morazow/multigroupby
+[multijava]: https://github.com/morazow/ScaldingExamples/tree/master/src/main/java/com/morazow/multigroupby
+[cascadingext]: https://github.com/LiveRamp/cascading_ext/blob/master/src/main/java/com/liveramp/cascading_ext/assembly/MultiGroupBy.java#L35-L55
