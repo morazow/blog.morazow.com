@@ -1,9 +1,14 @@
 language: ruby
 
+sudo: required
+
+services:
+  - docker
+
 env:
   global:
     - JEKYLL_ENV=production
-    # speeds up installation of html-proofer
+    - REPO=morazow/blog.morazow.com
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 addons:
@@ -40,3 +45,24 @@ jobs:
 
     - stage: "Run HTML Proofer Remote"
       script: bundle exec rake proofer:remote
+
+    - stage: "Deploy Docker Image To DockerHub"
+      script:
+        - make clean
+        - export TAG=$(git describe)
+        - echo "Current TAG = $TAG"
+        - bundle exec jekyll build
+        - cp -r _site docker/nginx/html
+        - docker build -t $REPO:$TAG ./docker/nginx/
+        - docker tag $REPO:$TAG $REPO:latest
+      before_deploy:
+        - echo "Before Deploy: Login to docker"
+      deploy:
+        provider: script
+        install: skip
+        skip_cleanup: true
+        script:
+          - echo "Deploying"
+
+    - stage: "List docker images"
+      script: docker images
