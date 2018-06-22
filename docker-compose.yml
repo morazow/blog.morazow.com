@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/jekyll/Dockerfile
-    image: morazow/blog
+    image: morazow/blog-dev
     container_name: blog
     volumes:
       - ./:/tmp/blog
