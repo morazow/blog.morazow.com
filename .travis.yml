@@ -25,26 +25,14 @@ cache:
 
 jobs:
   include:
-    - stage: "Bundle Install"
-      script: bundle install
-
-    - stage: "Jekyll Build"
-      script: bundle exec jekyll build
-
-    - stage: "Lint Ruby Files"
-      script: bundle exec rake linter:ruby
-
-    - stage: "Lint YAML Files"
-      script: bundle exec rake linter:yaml
-
-    - stage: "Lint Markdown Files"
-      script: bundle exec rake linter:markdown
-
-    - stage: "Run HTML Proofer Local"
-      script: bundle exec rake proofer:local
-
-    - stage: "Run HTML Proofer Remote"
-      script: bundle exec rake proofer:remote
+    - stage: "Build, Lint and Run HTML Proofer"
+      script:
+        - bundle exec jekyll build
+        - bundle exec rake linter:ruby
+        - bundle exec rake linter:yaml
+        - bundle exec rake linter:markdown
+        - bundle exec rake proofer:local
+        - bundle exec rake proofer:remote
 
     - stage: "Deploy Docker Image To DockerHub"
       script:
