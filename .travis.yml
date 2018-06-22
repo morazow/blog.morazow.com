@@ -14,14 +14,13 @@ env:
 addons:
   apt:
     packages:
-      # required to avoid SSL errors
       - ca-certificates
       - libcurl4-openssl-dev
 
 cache:
   bundler: true
   directories:
-    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+    - "$TRAVIS_BUILD_DIR/tmp/.htmlproofer"
 
 jobs:
   include:
@@ -43,13 +42,16 @@ jobs:
         - cp -r _site docker/nginx/html
         - docker build -t $REPO:$TAG ./docker/nginx/
         - docker tag $REPO:$TAG $REPO:latest
+      env:
+        - secure: joQtABpVlJKGIUd7v38ZrBpgQaByZEJ6/LWw+zmAbEI+RkOZwK05K7cwYLbkl6e2cCJy9de0pdLc8CCnwsvvcRzj8QdCOvUNbqiKYPJpPsrr47FhxWrfY6xYVnABovYEXrD2vYPdRT93WN2F9uDEMe9zrpUFWYyGHyIcwjl3HbMgp7OYckqlgzH5BtcNHn7FzqHpC3UT2USO2oXyPXf0pTyNdt1baQUYBSLWpoi3hSIx/ID3XBgKa7sEx/3yhfwF4VdWpvtHMwFSvk3V4++DZQUqp+UBb1Tj+aIwN4PnPL2+MrHHxNTUlmdG4jha4gbqx5tZdu0o02UV0X4L1BmjiRUu+O4Pk8xAC4AsCaoOZAPwdkpeYVLh67NnhxElc18Dyeyd6jc83tW8YqyeZOetb0le+A6EjpcH6VIDjdaj90yygGCS6AxUPKDikKexVwhgGBr9AEMJ9Mvb3vluHbHci8F5sMNhdYJhphoLutIXq0jfxaFsbtlT71ghqTuLyRVKWEBQNMllLnVkJwdZbaOm2/Gjs1mzpgetLhFfmECNuKAl+WWD4TyHCVjNerlcCk8s/3z8gU+QoYrhVesj4FqdwKcJsNVMpYhSzmNI/H0O9nNuVno9nfOUxn2lxZxCBsvoIkUX2uVbQIcr7hlDpTfftiX9UUmeVrWsF3ksaUchNNU=
+        - secure: JBqJ7wDqqBelfEtrIG3rxi4jQ0gFSP02pugUsfAlWWHNkjRNkZFrZa5tVQrJSvYvfKrnIGMLZbC5q9JkdM1SAu6bvPNcqMh5f4uEzGm3STiDGo4E88FXnD8uhDk7Lz7DobkGhlnNb7w8dXGhnXw2kQgq8BYQdvHtFAk/K+Ry89nJkd58XZY5V0zZ3qMWm+wxbxoo3RgbpEJ5a8RD678tKcWuNRRLpIO86SLvAVgPTOVUzyxWMHoMjNGOIN969GYXKtiPrncRjQfcdlt52v0RxVxdZVVY0F63fP2ylKMUVhvbS2kfPVDY66sOyHMypix5KFkmKw175aHGmUZNCXQGPoqyba1bmKhS1ZRo9pK94eHBOS+01PHfCcfeahjw/lvu+4/1NSv7vC25YnLWfZOuAgsvxrB+pJGbwf/OxUbfYEjocEDgX42GNBIUrel0cEDZfXn174Mj7ElD1uF/SSvKXLr1wtygu73344TXD9iZWXPKh2BpqS89UJwWbuX0InoEdJKWnaNV9S+/tT3aUDKMvPE5KZC/1a24jl9wHJ2BIp/zDCle5HwhxEjINDbRABQ6gOSWTMcTsEisaLKWThIoBdPDDnGUGnIMWo4LZ5pnt13eKcHT/yWQpqXoUQNmF7TEpA5TVOWvcZ6Br6srCD004/Az9mkhmqcQKPGdAe2e80k=
       before_deploy:
-        - echo "Before Deploy: Login to docker"
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       deploy:
         provider: script
         skip_cleanup: true
-        script:
-          - echo "Deploying"
-          - docker images
+        script: docker push $REPO:$TAG;
+                docker push $REPO:latest;
+                docker images
         on:
           all_branches: true
