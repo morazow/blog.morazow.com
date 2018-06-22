@@ -47,10 +47,9 @@ jobs:
         - echo "Before Deploy: Login to docker"
       deploy:
         provider: script
-        install: skip
         skip_cleanup: true
         script:
           - echo "Deploying"
-
-    - stage: "List docker images"
-      script: docker images
+          - docker images
+        on:
+          all_branches: true
