@@ -6,7 +6,7 @@ require 'html-proofer'
 require 'rubocop/rake_task'
 
 namespace 'jekyll' do
-  desc 'Build the jekyll website, e.g bundle exec jekyll build'
+  desc 'Build the jekyll blog, e.g bundle exec jekyll build'
   task :build do
     Jekyll::Commands::Build.process(profile: true)
   end
@@ -17,7 +17,7 @@ namespace 'jekyll' do
   end
 end
 
-desc 'Build the jekyll website if it has not been built yet'
+desc 'Build the jekyll blog if it has not been built yet'
 task build: ['_site/index.html']
 
 file '_site/index.html' do
@@ -83,7 +83,7 @@ namespace 'proofer' do
       http_status_ignore: [999],
       cache: { timeframe: '1w' },
       hydra: { max_concurrency: 10 },
-      internal_domains: ['www.morazow.com']
+      internal_domains: ['blog.morazow.com']
     }
     run_html_proofer!(opts)
   end

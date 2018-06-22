@@ -1,6 +1,6 @@
 # blog.morazow.com
 
-A docker image containing personal blog of [m.orazow](http://morazow.com).
+A docker image containing personal blog of [m.orazow](https://morazow.com).
 
 ## Usage
 

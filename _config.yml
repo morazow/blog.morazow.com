@@ -1,6 +1,6 @@
 ---
 
-url: http://morazow.com
+url: https://blog.morazow.com
 
 highlighter: rouge
 markdown: kramdown
@@ -22,4 +22,5 @@ exclude:
   - docker-compose.yml
   - Gemfile
   - Gemfile.lock
+  - docker
   - vendor
