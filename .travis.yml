@@ -54,4 +54,4 @@ jobs:
                 docker push $REPO:latest;
                 docker images
         on:
-          all_branches: true
+          branch: master
