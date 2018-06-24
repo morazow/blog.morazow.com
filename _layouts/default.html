@@ -4,14 +4,14 @@
     {% include head.html %}
 
     <body>
-        <section id="container">
+        <div class="container">
             {% include masthead.html %}
-        <section id="content">
-            {{ content }}
-        </section>
+            <main>
+                {{ content }}
+            </main>
             {% include comments.html %}
             {% include footer.html %}
-        </section>
+        </div>
     </body>
 
 </html>

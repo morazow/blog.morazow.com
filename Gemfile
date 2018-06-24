@@ -6,6 +6,7 @@ source 'https://rubygems.org' do
   gem 'jekyll-sitemap'
   gem 'mdl'
   gem 'rake'
+  gem 'rouge'
   gem 'rubocop'
   gem 'yaml-lint'
 end

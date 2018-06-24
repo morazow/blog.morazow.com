@@ -2,9 +2,16 @@
 
 url: https://blog.morazow.com
 
+permalink: /blog/:title.html
+
 highlighter: rouge
 markdown: kramdown
-permalink: /blog/:title.html
+
+# Assets
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 plugins:
   - jekyll-sitemap

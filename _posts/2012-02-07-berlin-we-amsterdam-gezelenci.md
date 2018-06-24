@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Berlin we Amsterdam Gezelençi
+title: Berlin we Amsterdam Gezelenç
 category: tk
 ---
 

@@ -1,0 +1,63 @@
+// Masthead and navigation
+//
+// Super small header above the content for site name and short description.
+
+.masthead {
+    padding: 0;
+    color: #aaa;
+}
+
+nav {
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+nav .title {
+    font-weight: bold;
+    margin-right: 0.5em;
+    color: #a00;
+}
+
+nav .title a {
+    text-decoration: none;
+    color: #a00;
+}
+
+nav .menu {
+    margin-right: 0.3em;
+}
+
+nav .icons {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0;
+        border: 0;
+    }
+
+    nav .title {
+        margin-right: 0;
+    }
+
+    nav .menu {
+        margin-right: 0;
+    }
+
+    .nav-item {
+        float: left;
+        width: 100%;
+        border-width: 1px;
+        text-align: center;
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+        &:last-child {
+            margin-left: -1px;
+            margin-bottom: 2rem;
+        }
+    }
+}

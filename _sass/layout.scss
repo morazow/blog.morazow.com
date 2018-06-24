@@ -1,0 +1,88 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+    max-width: 48rem;
+    padding: 1rem 1.5rem;
+    margin: 2rem auto 2rem auto;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1049px) {
+    main {
+        padding: 24px 28.8px;
+        margin-top: 2em;
+        border-radius: 10px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+article .meta {
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+}
+
+.post-listing h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .post-listing {
+        margin-top: 2rem;
+    }
+}
+
+.post-listing ul.posts {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.post-listing ul.posts li {
+    line-height: 1.75rem;
+}
+
+.post-listing ul.posts span {
+    color: #aaa;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+}
+
+// Disqus
+#disqus_thread {
+    margin-top: 1.5rem;
+}
+
+// Footer
+footer {
+    clear: both;
+    text-align: center;
+    line-height: 0.3em;
+    overflow: hidden;
+    padding: 1rem 0rem;
+    margin-top: 2rem;
+    border-top: 2px solid #666;
+    color: darkgrey;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: #aaa;
+}
+
+footer #copyright {
+    color: #aaa;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 0.85em;
+    }
+}
