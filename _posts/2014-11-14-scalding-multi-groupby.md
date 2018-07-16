@@ -117,59 +117,48 @@ import com.liveramp.cascading_ext.multi_group_by.MultiBuffer;
 import org.apache.commons.collections.keyvalue.MultiKey;
 
 public class MyMultiBufferOp extends MultiBuffer {
-  // ...
-
-  @Override
-  public void operate() {
-
-    // First pipe: UserAges <USERID, AGE>
-    Iterator<Tuple> userAges = getArgumentsIterator(0);
-    if (!userAges.hasNext())
-      return ;
-
-    Tuple userAgesTuple = userAges.next();
-    int user_age = userAgesTuple.getInteger(1); // second field is age
-
-    // Data structure to store the count
-    MultiKey key = null;
-    Map<MultiKey, Integer> countMap = new HashMap<MultiKey, Integer>();
-
-    // Second pipe: Purchases <USERID, TIMESTAMP, STATE, PURCHASES>
-    Iterator<Tuple> purchases = getArgumentsIterator(1);
-
-    while (purchases.hasNext()) {
-      Tuple purchasesTuple = purchases.next();
-
-      int state = purchasesTuple.getInteger(2); // third column is state
-
-      key = new MultiKey(state, user_age);
-      if (countMap.containsKey(key)) {
-        countMap.put(key, countMap.get(key) + 1);
-      }
-      else {
-        countMap.put(key, 1);
-      }
+    // ...
+    @Override
+    public void operate() {
+        // First pipe: UserAges <USERID, AGE>
+        Iterator<Tuple> userAges = getArgumentsIterator(0);
+        if (!userAges.hasNext()) {
+            return ;
+        }
+        Tuple userAgesTuple = userAges.next();
+        int user_age = userAgesTuple.getInteger(1); // second field is age
+        // Data structure to store the count
+        MultiKey key = null;
+        Map<MultiKey, Integer> countMap = new HashMap<MultiKey, Integer>();
+        // Second pipe: Purchases <USERID, TIMESTAMP, STATE, PURCHASES>
+        Iterator<Tuple> purchases = getArgumentsIterator(1);
+        while (purchases.hasNext()) {
+            Tuple purchasesTuple = purchases.next();
+            int state = purchasesTuple.getInteger(2); // third column is state
+            key = new MultiKey(state, user_age);
+            if (countMap.containsKey(key)) {
+                countMap.put(key, countMap.get(key) + 1);
+            } else {
+                countMap.put(key, 1);
+            }
+        }
+        // We just calculated <STATE, AGE, COUNT> results stored in 'countMap'
+        // Now we just have to emit COUNT, because we gave <STATE, AGE>
+        // as grouping names when calling this buffer operation
+        for (Map.Entry<MultiKey, Integer> entry : countMap.entrySet()) {
+            key = entry.getKey();
+            int state = (Integer) key.getKey(0);
+            int age = (Integer) key.getKey(1);
+            int count = entry.getValue();
+            emit(new Tuple(state, age, count));
+        }
     }
-
-    // We just calculated <STATE, AGE, COUNT> results stored in 'countMap'
-    // Now we just have to emit COUNT, because we gave <STATE, AGE>
-    // as grouping names when calling this buffer operation
-    for (Map.Entry<MultiKey, Integer> entry : countMap.entrySet()) {
-      key = entry.getKey();
-
-      int state = (Integer) key.getKey(0);
-      int age = (Integer) key.getKey(1);
-      int count = entry.getValue();
-      emit(new Tuple(state, age, count));
-    }
-  }
 }
 {% endhighlight %}
 
-On lines 11 & 23 we obtain tuple iterators for the two data sources. Then we
-keep updating the hashmap `HashMap(<state, age>, count)` until exhausting
-iterators on lines 30-36. Finally, on lines 42-49 we emit the hashmap contents
-as results for this buffer operation.
+First, we obtain tuple iterators for the two data sources. Then we keep updating
+the hashmap `HashMap(<state, age>, count)` until exhausting iterators values.
+Finally, we emit the hashmap contents as results for this buffer operation.
 
 You can find the full code [here][multiscala] and [here][multijava] multi buffer
 operation. In order to test the MultiGroupBy example you will have to assembly
