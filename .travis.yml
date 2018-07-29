@@ -44,23 +44,25 @@ jobs:
         - docker tag $REPO:$TAG $REPO:latest
       env:
         - secure: |-
-          ENbGDE10Je9ByBJmajrT//Txx4eeytTGTJGploss/kJhKjb0o4sB/39d3DmD4KXuo1kbUbUVYy5gJ4ZPPhLkQvA
-          yohen2zD1BR1oJ+W+ekQuNCtQFzB9vUguBXFYWOd2xfyyXk7Xu5IZ7r0CXJ8sRlXCMGjHCt3TeV5BbutA5aL6yY
-          bVdUitDfCtecssM/KfTT4sZ4SwX6/yW6MZZDOhEhGEZWNNz0Ofh6I6HTnplYCwJPASrs4SD8YbVt/+yCOiq5YTU
-          JdzPwSJ6qTDBhslMEpMWzILZTvNyKihJwA1DNrvnGoZewmRXiX+KdLppVOJOqj4QGznJjX5lgBXiysZm+dlrnsE
-          +RWHvs3u74/HnCxVYGRB1G3Pv+SyURaDCHa6Q4/5rKItrkYE6WKhkjniaIYFQOGP6GTWOHuZH6NY787UzSUmJh6
-          1kiAhoLuSObo13oYWZaE1f6PoOCIymMtFcEm1HZER3wJlu8ubnJUTeHfxsUvIks9+8vidHAup6WEQ5KExIEi5M+
-          q4zGXU4vN7mm7MRWzhPSl06oKNhxS3rkMhl7uhELkKPlmMs7WJad7AySZH7elWW1VgVmONnCsMpVEByfif/Wb+E
-          TKMDhiYLk4YYXOgn260oUBfhfsyQnYrAFasqsJyS/YxdLTnJnorXhqBkHTiYkYqMdYw7GVJ52U=
+            ENbGDE10Je9ByBJmajrT//Txx4eeytTGTJGploss/kJhKjb0o4sB/39d3DmD4KXuo1kbUbUVYy5gJ4ZPPhLkQ
+            vAyohen2zD1BR1oJ+W+ekQuNCtQFzB9vUguBXFYWOd2xfyyXk7Xu5IZ7r0CXJ8sRlXCMGjHCt3TeV5BbutA5a
+            L6yYbVdUitDfCtecssM/KfTT4sZ4SwX6/yW6MZZDOhEhGEZWNNz0Ofh6I6HTnplYCwJPASrs4SD8YbVt/+yCO
+            iq5YTUJdzPwSJ6qTDBhslMEpMWzILZTvNyKihJwA1DNrvnGoZewmRXiX+KdLppVOJOqj4QGznJjX5lgBXiysZ
+            m+dlrnsE+RWHvs3u74/HnCxVYGRB1G3Pv+SyURaDCHa6Q4/5rKItrkYE6WKhkjniaIYFQOGP6GTWOHuZH6NY7
+            87UzSUmJh61kiAhoLuSObo13oYWZaE1f6PoOCIymMtFcEm1HZER3wJlu8ubnJUTeHfxsUvIks9+8vidHAup6W
+            EQ5KExIEi5M+q4zGXU4vN7mm7MRWzhPSl06oKNhxS3rkMhl7uhELkKPlmMs7WJad7AySZH7elWW1VgVmONnCs
+            MpVEByfif/Wb+ETKMDhiYLk4YYXOgn260oUBfhfsyQnYrAFasqsJyS/YxdLTnJnorXhqBkHTiYkYqMdYw7GVJ
+            52U=
         - secure: |-
-          nzan70jHiBDfxCXl1TSl3rrczwzkPQ8ygRaKezohnzGVR8qnP91I5SFJLWgSV6rlsooDDZjF5CitjgFDI/N+C46
-          m8E+4M/AoSZhkyLBexe2QP/BTYaFqNaGRlU9gEZxxM81eA61qkB6wOxDPHYuBUyHwx/Lm0xACShvsHk2EWukyvp
-          EmRlgkZU4MAJz8Sqx14kP3i9LskrhmBt6v74BLBl5pz0BkkJJ6Iz4UCG87qbeI7oXEEui/FE/x0Z80sIdqhJXpe
-          O0gIMuvlDGhbJfv+KZuTlgprmFnjmZwCn1EF1p5J9mzfhCgMfy0tMQQK0hBGso9/lMJow1EaBlw2NxM66N66Fbj
-          nlCj4y4aZkVn+ENN7D7ZOSa/PmF+EQcgrQvU/8uIf4cfoURUYYkYxjkSQNFlouWGviA8CNnODLgNrW2s5m2snUy
-          8XWe95b93mbrc2Bpi+nLL87KozR7Gxu6IW/sImnnqRopHYik6LXS/w1BLD9DJM3x3MmdrXzb19fNHcnNIeuj+WV
-          S1SkBxBBMoBP7boy2A/DXF7y9QQaCj7LvBO3PJD5Z4VyLup25mx/pLlQzotCfrA/zqyMiBPEIVs5PoM6vERKbVx
-          s1B5VC2Iy9OsWU1mT8hyr/a3VabIYiCxs0Gmoul3ETvGsP0IsVeenXwnjMiZ5T+W2HI1+07wtI=
+            nzan70jHiBDfxCXl1TSl3rrczwzkPQ8ygRaKezohnzGVR8qnP91I5SFJLWgSV6rlsooDDZjF5CitjgFDI/N+C
+            46m8E+4M/AoSZhkyLBexe2QP/BTYaFqNaGRlU9gEZxxM81eA61qkB6wOxDPHYuBUyHwx/Lm0xACShvsHk2EWu
+            kyvpEmRlgkZU4MAJz8Sqx14kP3i9LskrhmBt6v74BLBl5pz0BkkJJ6Iz4UCG87qbeI7oXEEui/FE/x0Z80sId
+            qhJXpeO0gIMuvlDGhbJfv+KZuTlgprmFnjmZwCn1EF1p5J9mzfhCgMfy0tMQQK0hBGso9/lMJow1EaBlw2NxM
+            66N66FbjnlCj4y4aZkVn+ENN7D7ZOSa/PmF+EQcgrQvU/8uIf4cfoURUYYkYxjkSQNFlouWGviA8CNnODLgNr
+            W2s5m2snUy8XWe95b93mbrc2Bpi+nLL87KozR7Gxu6IW/sImnnqRopHYik6LXS/w1BLD9DJM3x3MmdrXzb19f
+            NHcnNIeuj+WVS1SkBxBBMoBP7boy2A/DXF7y9QQaCj7LvBO3PJD5Z4VyLup25mx/pLlQzotCfrA/zqyMiBPEI
+            Vs5PoM6vERKbVxs1B5VC2Iy9OsWU1mT8hyr/a3VabIYiCxs0Gmoul3ETvGsP0IsVeenXwnjMiZ5T+W2HI1+07
+            wtI=
       before_deploy:
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       deploy:
