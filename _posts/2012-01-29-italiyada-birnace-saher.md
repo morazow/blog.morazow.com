@@ -4,13 +4,9 @@ title: Italiýada Birnäçe Şäher
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012 ýylyň 29-njy ýanwary - Milan-Zurich arasyndaky otlyda</p>
 
-Pisa
-----
+## Pisa
 
 Gije ýarysyna sähel galanda, Livorno portyna geldik, derrew gämiden düşüp taksi
 tutyp wokzalyň ýolyny tutdym. Özüm ilki ýörärn wokzala çenli diýýädim ýöne
@@ -49,8 +45,7 @@ wokzalda garaşdan, sagat 12 çenli McDonalds-da ondan soňam sowyk, bomşlaryň
 üýşýän ýeri bolan wokzalda .. Menem bir burçy eýeledim we kitap okap aýdym
 diňläp wagty geçirdim ..
 
-Rim
-----
+## Rim
 
 Bäşde ýola çykyp sagat on töwerekleri Rim (Roma) şäher wokzalyna geldim. Wokzal
 gaty uly ekeni ilkinji üns beren zadym, 30 töweregi otly liniýasy bardy. Derrew
@@ -69,8 +64,7 @@ zordan 3 sagat töweregi uky alyp bilipdim.
 Wokzala gelip, altyň ýarynda bir otly Florence (Florentina) gidýärdi şoňa mündim
 we ýatmak bilen boldym.
 
-Florentina
-----------
+## Florentina
 
 Gelemde eýýäm sagat agşam dokuz töwerekleri. Iki sany Hostel adresi alypdym
 internetden ikisine hem gitdim (telefonyn maps app-i sag bolsyn). Ýöne ikisinde
@@ -87,8 +81,7 @@ Soň ýene yzyma wokzala gaýtdym, gije dörtde Milana gitýän otla münmekçid
 Sagat ýaňy bir ikiň ýary töwerekleri ýene garaşmak üçin wokzalyň iki ädim
 ýanyndaky McDonalds-a gitdim.
 
-Milan
-------
+## Milan
 
 Irden sagat dokuz töwerekleri Milan merkez wokzalyna geldim. Derrew internetden
 bir iki sany hostel adresi alyp metro bilen iň ýakyna gitdim. Baran hostelimde

@@ -4,13 +4,9 @@ title: Barcelona We Başdan Geçirenlerim
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012 ýylyň 26-njy ýanwary - Orta ýer deňizinde bir ýerler</p>
 
-Şäher Barada
-------------
+## Şäher Barada
 
 Lissabondan gije ýola çykyp, Madrid-den transfer edip, soňynda günortan
 töwerekleri Barcelona şäherine geldim, sag aman. Güneşli we salkyn howa bardy.
@@ -32,8 +28,7 @@ turistik ýerler. Owadan ýerler surata düşürişdirip bir iki sagat aýlandym
 
 ![sutunler2](/files/barcelona/06.JPG)
 
-Pulymyň Ogurlanmagy
--------------------
+## Pulymyň Ogurlanmagy
 
 Boldy indi diýip yzyma barýarkam, öňümden 4-5 sany çaga (14-15 ýaşly) gyz çykyp,
 "Biz maýyp çagalar üçin ýardym toplaýas, golyňyz we şaheriňizi ýazyp 5 euro
@@ -60,8 +55,7 @@ gezelençden lezzet almak bilen bolyberdim.  (aslynda özümide gaharym gelýar,
 eldäki pullaryň hemmesini bir ýerde tutmak gaty howply, her ýerde birnäçe manat
 saklamak amatly we howpsyzrak.. haýyrlysy)
 
-Indi Niräk
------------
+## Indi Niräk
 
 Ýene bir sagat ýaly şäheriň içinde ýöredim, gün ýaşypdy, soraşdyryp ýene
 Barcelona Sants wokzala geldim, derrew gidesim gelýärdi Italiýa ýöne otly ýok

@@ -4,13 +4,9 @@ title: Blogging Using Jekyll and Github Pages
 category: en
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">28 December 2011 - Lisbon</p>
 
-Introduction
-------------
+## Introduction
 
 As you know there are lots of blogging engine out there (Wordpress, Blogger,
 etc).  Several years ago I have used to blog on the Wordpress, then again on
@@ -26,8 +22,7 @@ right place.  In this post I will try to explain how to setup blogging engine
 using [Jekyll](http://github.com/mojombo/jekyll) and [Github
 Pages](http://pages.github.com/).
 
-Blogging Engine in a Half an Hour
----------------------------------
+## Blogging Engine in a Half an Hour
 
 A Lot of people use Github for code repository hosting, but you can also do
 webhosting with your Github account. It is source controlled and free, after
@@ -139,8 +134,7 @@ After adding that file, you will need to modify your DNS settings by adding an A
 record that points to 207.97.227.245.
 -->
 
-Further Steps
---------------
+## Further Steps
 
 From now on you can modify your site using HTML/CSS (I do not speak this
 language.) with full control over the blogging engine. Create themes of your
@@ -151,8 +145,7 @@ Preston-Werner's](http://github.com/mojombo/mojombo.github.com) site and,
 currently I am happy with it. Maybe I will learn some html/css while making the
 changes to the site.
 
-References
-----------
+## References
 
 * [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki/) - Covers more features
   and configuration options for Jekyll.

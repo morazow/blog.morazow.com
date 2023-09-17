@@ -3,3 +3,4 @@ _site/
 Gemfile.lock
 tmp/.htmlproofer
 docker/nginx/html
+vendor

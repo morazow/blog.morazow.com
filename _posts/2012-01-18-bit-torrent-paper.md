@@ -4,8 +4,6 @@ title: CS Papers - BitTorrent
 category: en
 ---
 
-# {{ page.title }}
-
 <p class="meta">18 January 2012 - Lisbon</p>
 
 ## 1 Introduction

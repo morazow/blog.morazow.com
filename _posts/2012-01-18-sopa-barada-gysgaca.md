@@ -4,9 +4,6 @@ title: SOPA Barada Gysgaça
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012-njy ýylyň 18-nji ýanwary - Lissabon</p>
 
 Ýaňy pikirlerde Wikipedia iňlis dilinde näme üçin ýapylýar wş soraglar soraldy.

@@ -1,33 +1,32 @@
 ---
-
-url: https://blog.morazow.com
-
-permalink: /blog/:title.html
+title: SCALED VOID
+theme: jekyll-whiteglass
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
 
 highlighter: rouge
 markdown: kramdown
 
-# Assets
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir: _sass
-  style: :compressed
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
 
-plugins:
-  - jekyll-sitemap
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 exclude:
   - .gitignore
-  - .editorconfig
-  - .travis.yml
-  - .ruby-version
+  - .github
   - README.md
   - LICENSE.md
-  - Makefile
-  - Rakefile
-  - Dockerfile
-  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
-  - docker
   - vendor

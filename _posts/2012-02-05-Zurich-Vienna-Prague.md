@@ -4,13 +4,9 @@ title: Zurich-Vienna-Prague Gezelenç
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012 ýylyň 2-nji fewraly - Berlin</p>
 
-Zürich
--------
+## Zürich
 
 Irden sagat 7 töwerekleri Milan wokzalyndan Zürich gidýän otla mündim. Öňümde üç
 sagatlyk ýol bardy.  Milan-Zürich arasy gezelenç hasam owadandy sebäbi
@@ -36,8 +32,7 @@ bolyberdim.
 snowboarding etmek. Alp daglar ýanyňda we meniň arkamda uly sumka bar bolsa daş
 töwerekdäki köp kişide lyža we snowboarding bardy. Nesip bolsa başga bir wagt..
 
-Wiýenna
---------
+## Wiýenna
 
 Wiýenna ýolçylygynda compartment-de Çehiýa respublikasyndan bolan bir gyz hem
 bardy, Wiýenna we Prague hakynda birnäçe maglumatlar alyşdyrdym. Özüne hem
@@ -58,8 +53,7 @@ işiňi saz bilen bitirmek göz öňüme geldi..
 Wiýenna hem köp aşyk bolan şäherlerimiň biri.. Derrew aýlanyşdyryp Prague ýolyny
 tutmak bilen boldym.
 
-Prague
-------
+## Prague
 
 Şäheri daň bilen sagat bäş töwerekleri geldim. Ilkinji üns beren zadym Çek
 sözlerine düşünmegim, bular hem öň Sowýet baknalygynda bolany üçin köp zat

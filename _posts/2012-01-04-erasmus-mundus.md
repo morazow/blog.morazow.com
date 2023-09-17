@@ -4,9 +4,6 @@ title: Erasmus Mundus - Ýewropada Magistratura (Stipendiýaly)
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">04 January 2012 - Lisbon</p>
 
 (Bu mowzuk hem maglumat (informative) görnüşdedir)

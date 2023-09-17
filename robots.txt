@@ -1,2 +1,7 @@
+---
+layout: null
+---
 User-agent: *
-Allow: /
+Disallow:
+
+Sitemap: {{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
