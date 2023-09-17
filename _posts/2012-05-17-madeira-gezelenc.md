@@ -4,9 +4,6 @@ title: Madeira Adasyna Gezelenç
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012 ýylyň 17-nji maýy - Lissabon</p>
 
 Ýene bir gezelenç, Portugaliýa degişli bolan, okeýanyň ortasynda ýerleşen ada

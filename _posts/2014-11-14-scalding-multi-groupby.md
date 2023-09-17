@@ -7,8 +7,6 @@ location: Nuremberg
 comments: true
 ---
 
-# {{ page.title }}
-
 <p class="meta">18 November 2014 - Nuremberg</p>
 
 ## TL;DR
@@ -31,7 +29,7 @@ id="backcolor">`<user_id, age>`</span>
 The main goal of this map reduce job is to count the number of purchases per
 state and per age group.
 
-In Scalding we can implement this job as,
+In Scalding, we can implement this job as,
 
 {% highlight scala %}
 class MultiGroupByExample1(args: Args) extends Job(args) {
@@ -75,7 +73,7 @@ reducing the three steps from above job into single map reduce phase.
 > Recently I was reading [tips for optimizing Cascading
 flows](http://nathanmarz.com/blog/tips-for-optimizing-cascading-flows.html) and
 recalled [Cascading extensions](https://github.com/LiveRamp/cascading_ext)
-project which I saw several months ago.  It offers additional operations on top
+project, which I saw several months ago.  It offers additional operations on top
 of Cascading. Here I will only show MultiGroupBy (maybe BloomJoin in some other
 blog post). It is great!
 

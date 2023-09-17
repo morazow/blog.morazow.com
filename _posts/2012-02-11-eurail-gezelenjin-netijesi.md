@@ -4,9 +4,6 @@ title: Eurail Gezelenjiň Netijesi
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012-njy ýylyň 11-nji fewraly - Lissabon</p>
 
 ![yollar](/files/yollar.png)
@@ -25,8 +22,7 @@ bolsa arkaýyn [Interrail](https://www.interrail.eu/en) (bu Eurail-dan arzan)
 bileti satyn alyp, ýanyna pasaportyny we ikametini alyp arkaýyn gezip biler.
 Sebäbi Türkiýani hem ýewropa zonasynda diýip hasaplapdyrlar.
 
-Kiçijek Maslahatlarym
----------------------
+## Kiçijek Maslahatlarym
 
 Men gyşda gezdim, ýanyňyza ýyly eşikleri hökman alyň, ellik, şarf, şapka we ýene
 hökman alynmaly zatlaryň biri hem şypbyk, gündiz gezip ýadap agyr göwüşi çykaryp

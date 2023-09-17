@@ -4,9 +4,6 @@ title: Ýewropanyň iň günbatar çüňki, Cabo da Roca
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012 ýylyň 20-nji fewraly - Lissabon</p>
 
 Şu gün irden oglanlar bilen Ýewropanyň iň günbatar çüňki bolan [Cabo da

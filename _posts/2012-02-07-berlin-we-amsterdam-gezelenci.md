@@ -4,13 +4,9 @@ title: Berlin we Amsterdam Gezelenç
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012-njy ýylyň 07-nji fewraly - Amsterdam</p>
 
-Berlin
--------
+## Berlin
 
 Gije sagat on töwerekleri Berlin wokzalyna geldim, göni öňünden reserve eden
 [Meinengir](https://www.meininger-hotels.com/en/home/) hostelime gitdim,
@@ -26,8 +22,7 @@ aýyrmandyrlar.
 Birem Berliniň Metro sistemasy iň çylşyrymly bolany öýdýän, düşünýänçäm kelle
 çişdi.
 
-Amsterdam
----------
+## Amsterdam
 
 Iki gün Berlinde türkmen oglanlary bilen galyp gije Amsterdama tarap ýola
 düşdim. Irden sagat 11 töwerekleri gelip bir [Inner

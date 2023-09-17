@@ -4,9 +4,6 @@ title: Miradouro da Graça
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012-njy ýylyň 10-njy ýanwary - Lissabon</p>
 
 Lissabonda howa köplenç maýyl, gyşyň ortasynda gezip ýörs ýöne entäk ne gar bar

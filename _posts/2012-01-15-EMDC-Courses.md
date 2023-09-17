@@ -4,13 +4,9 @@ title: EMDC Courses
 category: en
 ---
 
-{{ page.title }}
-===============
-
 <p class="meta">15 January 2012 - Lisbon</p>
 
-Introduction
-------------
+## Introduction
 
 On the summer of 2011 after graduating from [METU](http://www.metu.edu.tr)
 Computer Engineering, I have been accepted to European Masters in Distributed
@@ -40,8 +36,7 @@ master's courses,
 All of these courses were challenging and interesting, I have learned whole new
 technologies, concepts and had hands on practice doing projects.
 
-Parallel and Distributed Computing
-----------------------------------
+## Parallel and Distributed Computing
 
 This course was most familiar for me since I had Parallel computing course while
 studying my Bachelor's degree. Nevertheless I have learned new things about
@@ -52,8 +47,7 @@ several metrics.
 Course project was to implement network slack computation both using OpenMP
 (shared memory) and MPI (distributed memory).
 
-Peer-to-Peer Systems and Overlay Networks
------------------------------------------
+## Peer-to-Peer Systems and Overlay Networks
 
 This was one of the interesting courses. Starting from BitTorrent, eMule and
 then learning about unstructured p2p systems, Gnutella; then structures ones,
@@ -63,8 +57,7 @@ content distribution (Akamai), load balancing in p2p systems, etc.
 
 Course project was to design Http p2p proxy.
 
-Cloud Computing
----------------
+## Cloud Computing
 
 This course was also very interesting. Starting from clusters, grids and
 eventually about cloud technologies. Implementing mini MapReduce using Hadoop,
@@ -76,8 +69,7 @@ on Amazon EC2, stored data on MS Azure database and implemented web front-end on
 Google App Engine communicating with Azure database. Trying and learning these
 was very interesting.
 
-Network and Computer Security
------------------------------
+## Network and Computer Security
 
 This course was my least interesting. We have learned lots of protocols and key
 encryption algorithms, both symmetrical and asymmetrical. Moreover, about the

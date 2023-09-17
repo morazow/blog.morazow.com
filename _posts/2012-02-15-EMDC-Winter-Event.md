@@ -4,16 +4,13 @@ title: EMDC Winter Event
 category: en
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">15 February 2012 - Sintra</p>
 
 After traveling around the Europe, I have eventually arrived to Lisbon. There
 was an [EMDC][emdcupc] event at [Sintra](http://en.wikipedia.org/wiki/Sintra)
 that I should attend. I was excited since it would be gathering whole actors of
 this program. Some guys from previous batch, guys from Barcelona and Lisbon
-tracks and of course professors and some invited speakers were there.
+tracks and of course professors, and some invited speakers were there.
 
 Sintra was great place to have such an event. Meeting fellow EMDC-ers and
 talking, getting tips from seniors was another activity I enjoyed very much.
@@ -23,7 +20,7 @@ master's thesis, etc.  Another presentation was given about Stockholm, Sweden
 and [KTH](http://www.kth.se/en) where we will be studying one semester.
 
 One thing I really liked was, seniors wore t-shirts while they were giving
-presentation and the tagline was
+presentation, and the tagline was
 
 > "no tagline yet, still running [paxos][1]"
 

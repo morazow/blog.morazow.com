@@ -7,8 +7,6 @@ location: Nuremberg
 comments: true
 ---
 
-# {{ page.title }}
-
 <p class="meta">03 October 2014 - Nuremberg</p>
 
 ## TL;DR
@@ -34,7 +32,7 @@ really really awesome. I cannot recommend them enough.
 
 Usually we have several chain of map reduce jobs running. One of the jobs
 performs daily aggregation of the incoming data. The result of this job is then
-used as input for other jobs which run weekly or monthly.
+used as input for other jobs that run weekly or monthly.
 
 ## The Problem
 
@@ -70,8 +68,8 @@ Just change the Tsv tap with it,
   .write(TemplatedTsv(baseOutputPath, "%02d", 'STATE))
 {% endhighlight %}
 
-When running the job jar just give the base output path as  <span
-id="backcolor">`--output /year/month/day/`</span>  and it will create state
+When running the job jar just give the base output path as <span
+id="backcolor">`--output /year/month/day/`</span>, and it will create state
 folders inside above path.
 
 However, this approach will create [lots
@@ -135,7 +133,7 @@ into output partition thus creating file smaller files.
 
 ## Conclusion
 
-TemplatedTsv is great. However, it creates lots of small output files which
+TemplatedTsv is great. However, it creates lots of small output files, which
 affects negatively the performance of the next job on the chain. Fortunately,
 the number of files can be reduced by sorting the data according to template
 before writing the tap. Furthermore, if the data is skewed you can apply some

@@ -4,13 +4,9 @@ title: Eurail Bilen Gezelenç
 category: tk
 ---
 
-{{ page.title }}
-================
-
 <p class="meta">2012 ýylyň 24-nji ýanwary - Lissabon</p>
 
-Giriş
-------
+## Giriş
 
 Köpüňiz öň hem eşidensiňiz, Interrail ýa-da otly bilen ýewropa ýurtlaryny
 gezmek, Eurail bolsa ýewropadan başga ýerde ýaşaýanlar üçin şu mümkinçiligi
@@ -34,8 +30,7 @@ Facebook](http://www.facebook.com/eurorail) sahypalarynda birem hepde içi chat
 wagtlary bar hergün 5 sagatmy birzat, bolmasa hem mail bilen sorap bilersiňiz,
 iki iş güni içinde jogap berýärler. (sales@eurail.com)
 
-Taýýarlyk
----------
+## Taýýarlyk
 
 Gezelenje taýýarlyk barada ýüzlerçe maslahat bar, ýöne şu ýerde öz eden
 zatlarymy ýazmakçy. Ilki bilen rugzaga (sumka) nämeler alyşdyrdym,
