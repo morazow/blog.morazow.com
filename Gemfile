@@ -1,12 +1,8 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org' do
-  gem 'html-proofer'
-  gem 'jekyll'
-  gem 'jekyll-sitemap'
-  gem 'mdl'
-  gem 'rake'
-  gem 'rouge'
-  gem 'rubocop'
-  gem 'yaml-lint'
+source "https://rubygems.org"
+gem "jekyll"
+group :jekyll_plugins do
+  gem "jekyll-whiteglass"
+  gem "rouge"
 end
