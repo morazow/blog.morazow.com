@@ -18,6 +18,25 @@ body {
     padding: 15px 0;
 }
 
+.post-title {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-list > li {
+    margin-bottom: 30px;
+}
+
+.post-list > li:not(:first-child) {
+    border-top: 4px solid #e8e8e8;
+    padding-top: 30px;
+}
+
+.post-content h2 {
+    font-size: 18px;
+}
+
 .site-footer {
     width: 50%;
     text-align: left;
@@ -32,6 +51,14 @@ article .meta {
     margin-top: -.5rem;
     margin-bottom: 1rem;
     color: #9a9a9a;
+}
+
+.pagination .previous {
+    float: right;
+}
+
+.pagination .next {
+    float: left;
 }
 
 // Masthead and navigation
