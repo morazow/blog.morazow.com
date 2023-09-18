@@ -8,10 +8,11 @@ category: en
 
 ## 1 Introduction
 
-Original paper is [here](http://bittorrent.org/bittorrentecon.pdf).  As you know
-BitTorrent is [Peer-to-Peer](http://en.wikipedia.org/wiki/Peer-to-peer) file
-sharing protocol. <!--In this blog I will try to give brief summary of this
-protocol.-->
+Original paper is
+[here](https://github.com/bittorrent/bittorrent.org/blob/master/bittorrentecon.pdf).
+As you know BitTorrent is
+[Peer-to-Peer](https://en.wikipedia.org/wiki/Peer-to-peer) file sharing
+protocol. <!--In this blog I will try to give brief summary of this protocol.-->
 
 ## 2 Technical Framework
 
@@ -33,7 +34,7 @@ each other.  All logistical problems of file downloading are handled in the
 interactions between peers.  In order to keep track of which peers have what,
 BitTorrent cuts files into pieces of fixed size. Each downloader reports to all
 of its peers what pieces it has. To verify data integrity,
-[SHA1](http://en.wikipedia.org/wiki/SHA-1) hashes of all pieces are included in
+[SHA1](https://en.wikipedia.org/wiki/SHA-1) hashes of all pieces are included in
 the <code>.torrent</code> file, and peers don't report that they have a piece
 until they've checked the hash. Peers continuously download pieces from all
 peers which they can.

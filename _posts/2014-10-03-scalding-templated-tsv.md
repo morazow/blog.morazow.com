@@ -27,7 +27,7 @@ You can find full pseudocode at the bottom of this page.
 
 My daily job involves writing Hadoop map reduce jobs. I use
 [Scalding](https://github.com/twitter/scalding) and
-[Cascading](http://www.cascading.org/projects/cascading/). They are really
+[Cascading](https://www.cascading.org/projects/cascading/). They are really
 really really awesome. I cannot recommend them enough.
 
 Usually we have several chain of map reduce jobs running. One of the jobs
@@ -61,8 +61,10 @@ for not existing states.
 
 ## The Solution
 
-To achieve the goal we can use [TemplatedTsv][templatedtsv] tap from Scalding.
-Just change the Tsv tap with it,
+To achieve the goal we can use <a
+href="https://twitter.github.io/scalding/api/#com.twitter.scalding.TemplatedTsv"
+target="_blank" data-proofer-ignore>TemplatedTsv</a> tap from Scalding. Just
+change the Tsv tap with it,
 
 {% highlight scala %}
   .write(TemplatedTsv(baseOutputPath, "%02d", 'STATE))
@@ -73,7 +75,7 @@ id="backcolor">`--output /year/month/day/`</span>, and it will create state
 folders inside above path.
 
 However, this approach will create [lots
-files](http://blog.cloudera.com/blog/2009/02/the-small-files-problem/). Because
+files](https://blog.cloudera.com/blog/2009/02/the-small-files-problem/). Because
 the data is not organized in any way, each reducer will have data containing
 several states, reducers will create several files in the state folder.
 
@@ -162,5 +164,3 @@ val pipeETL = pipeSource
 {% endhighlight %}
 
 {% include tweet.html %}
-
-[templatedtsv]: https://twitter.github.io/scalding/api/#com.twitter.scalding.TemplatedTsv

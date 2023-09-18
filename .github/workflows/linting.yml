@@ -1,0 +1,38 @@
+name: Linting
+
+on:
+  schedule:
+    - cron: "0 5 * * 0"
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+          fetch-depth: 1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+          ruby-version: 3.2
+          bundler-cache: true
+    - name: Clean site
+      run: |
+        if [ -d "_site" ]; then
+          rm -rf _site/
+        fi
+    - name: Build site
+      run: JEKYLL_ENV=production bundle exec jekyll build
+    - name: Install htmlproofer
+      run: gem install html-proofer
+    - name: Run htmlproofer
+      run: |
+        htmlproofer --allow-hash-href --allow_missing_href --assume-extension --external-only --ignore-status-code 302,999 --ignore-urls "https://fonts.gstatic.com" --hydra='{"max_concurrency": 10}' ./_site

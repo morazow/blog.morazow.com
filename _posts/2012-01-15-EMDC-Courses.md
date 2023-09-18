@@ -8,12 +8,12 @@ category: en
 
 ## Introduction
 
-On the summer of 2011 after graduating from [METU](http://www.metu.edu.tr)
+On the summer of 2011 after graduating from [METU](https://www.metu.edu.tr)
 Computer Engineering, I have been accepted to European Masters in Distributed
 Computing ([EMDC][emdc]) joint Erasmus Mundus programme between [KTH Royal
-Institute of Technology (KTH)](http://www.kth.se/) in Sweden, [Instituto
-Superior Técnico in Portugal (IST)](http://www.ist.utl.pt/) and [Universitat
-Politècnica de Catalunya (UPC)](http://www.upc.edu/en) in Spain.  It is a
+Institute of Technology (KTH)](https://www.kth.se/) in Sweden, [Instituto
+Superior Técnico in Portugal (IST)](https://www.ist.utl.pt/) and [Universitat
+Politècnica de Catalunya (UPC)](https://www.upc.edu/en) in Spain.  It is a
 two-year Master's programme including compulsory mobility for the students.
 
 I have been accepted to IST - KTH track, which means I will be studying in the
@@ -25,7 +25,7 @@ After long efforts and procedures of getting visa, I have managed to get to the
 Lisbon and adapt to the beautiful city, to the university and  meet with great
 friends.
 
-This semester (Fall 2011) at [IST](http://www.ist.utl.pt/) I have taken four
+This semester (Fall 2011) at [IST](https://www.ist.utl.pt/) I have taken four
 master's courses,
 
 * Parallel and Distributed Computing
