@@ -29,22 +29,3 @@ jobs:
         fi
     - name: Build site
       run: JEKYLL_ENV=production bundle exec jekyll build
-
-    # Deployment Steps
-    - name: Prepare ssh
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-    - name: Run rsync
-      run: |
-        rsync --archive --compress --verbose --delete --human-readable --stats --info=progress2 --protect-args \
-              -e "ssh -p ${{ secrets.DEPLOY_PORT }} -o StrictHostKeyChecking=no" \
-              _site/ \
-              ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/blog.morazow.com/
-    - name: Rerun service
-      run: |
-        ssh -p ${{ secrets.DEPLOY_PORT }} \
-            -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
-            'docker-compose --project-directory ${{ secrets.DEPLOY_PATH }} restart blog'
-
