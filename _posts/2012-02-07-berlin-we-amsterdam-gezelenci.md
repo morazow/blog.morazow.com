@@ -25,8 +25,7 @@ Birem Berliniň Metro sistemasy iň çylşyrymly bolany öýdýän, düşünýä
 ## Amsterdam
 
 Iki gün Berlinde türkmen oglanlary bilen galyp gije Amsterdama tarap ýola
-düşdim. Irden sagat 11 töwerekleri gelip bir [Inner
-Amsterdam](http://www.innerhotel.nl/) hostela ýerleşdim.
+düşdim. Irden sagat 11 töwerekleri gelip bir Inner Amsterdam hostela ýerleşdim.
 
 Amsterdam ýeke söz bilen çözýär. Çynym özüňiz gelip gözüňiz bilen görmeli.
 Şäheri bet edip oňarypdyrlar, birnäçe kanal geçýär içinden. (Kartasyna seredip
@@ -45,4 +44,4 @@ Red Light Street-i gezmek.
 Berlinde bir gün artykmaç galanym üçin bileti mundan soň ulanyp bilemokdym,
 eýýäm 15 gün doldy. Netijede Amsterdamdan Lissabona uçaga bilet aldym. Ýöne
 ýenede gezelenç gutaranokdy, öňümde iki günlik UNESCO-nyň goragy astyna alan
-[Lissabon Sintra](http://en.wikipedia.org/wiki/Sintra) gezelençi bardy..
+[Lissabon Sintra](https://en.wikipedia.org/wiki/Sintra) gezelençi bardy..

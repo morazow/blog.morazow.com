@@ -1,0 +1,53 @@
+name: Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+          fetch-depth: 1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+          ruby-version: 3.2
+          bundler-cache: true
+    - name: Clean site
+      run: |
+        if [ -d "_site" ]; then
+          rm -rf _site/
+        fi
+    - name: Build site
+      run: JEKYLL_ENV=production bundle exec jekyll build
+
+    # Deployment Steps
+    - name: Prepare ssh
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+    - name: Run rsync
+      run: |
+        rsync --archive --compress --verbose --delete --human-readable --stats --info=progress2 --protect-args \
+              -e "ssh -p ${{ secrets.DEPLOY_PORT }} -o StrictHostKeyChecking=no" \
+              _site/ \
+              ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/blog.morazow.com/
+    - name: Rerun service
+      run: |
+        ssh -p ${{ secrets.DEPLOY_PORT }} \
+            -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
+            'docker-compose --project-directory ${{ secrets.DEPLOY_PATH }} restart blog'
+

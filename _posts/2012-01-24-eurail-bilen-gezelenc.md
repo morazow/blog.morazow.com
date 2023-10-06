@@ -10,12 +10,12 @@ category: tk
 
 Köpüňiz öň hem eşidensiňiz, Interrail ýa-da otly bilen ýewropa ýurtlaryny
 gezmek, Eurail bolsa ýewropadan başga ýerde ýaşaýanlar üçin şu mümkinçiligi
-ýetirýär. [Eurail.com](http://www.eurail.com/home)-dan islän bilet görnüşini
+ýetirýär. [Eurail.com](https://www.eurail.com/en)-dan islän bilet görnüşini
 saýlap gezelenç edip bilersiňiz. [Bilet görnüşleri][eurail],
 
-* **Global Pass** - ýagny ýewropaň islendik ýurtlaryny 15 gün içinde gezmek
-* **Regional Pass** - birnäçe gün ýewropada 2-3 döwleti saýlap gezmek
-* **Flexi Pass** - alty aý içinde islendik gün, toplamda 15 gün islendik ýeri
+* **Global Pass** &mdash; ýagny ýewropaň islendik ýurtlaryny 15 gün içinde gezmek
+* **Regional Pass** &mdash; birnäçe gün ýewropada 2-3 döwleti saýlap gezmek
+* **Flexi Pass** &mdash; alty aý içinde islendik gün, toplamda 15 gün islendik ýeri
   gezmek
 
 ýaly bilet görnüşleri bar.
@@ -26,7 +26,7 @@ bilet köýýär.  Şeýle sorag ýüze çykyp biler, "Wiza gerekmi?" gezelenç 
 özümä gerek däl diýip bilýän, biletiň özi wiza ýerine geçýärmikä diýýän, haýsam
 bolsa bir ýewropa döwletine gelip başlabermeli aýlan-çaýlaňa.  Ýöne anyk
 bilmeli, öňümizdäki günlerde soramakçy. Islän soragyňyzy [Eurail
-Facebook](http://www.facebook.com/eurorail) sahypalarynda birem hepde içi chat
+Facebook](https://www.facebook.com/eurorail) sahypalarynda birem hepde içi chat
 wagtlary bar hergün 5 sagatmy birzat, bolmasa hem mail bilen sorap bilersiňiz,
 iki iş güni içinde jogap berýärler. (sales@eurail.com)
 
@@ -40,9 +40,9 @@ zatlarymy ýazmakçy. Ilki bilen rugzaga (sumka) nämeler alyşdyrdym,
   syrýan maşynka :D
 * Kitap: [Game of Thrones][thrones] (A Song of Ice and Fire, Book One), nesip
   bolsa gutaryp bilerin ýolda okap
-* Music: [AC/DC](http://en.wikipedia.org/wiki/AC/DC) butin albomlaryny download
+* Music: [AC/DC](https://en.wikipedia.org/wiki/AC/DC) butin albomlaryny download
   etdim, hemme aýdymlaryny diňlemekçi we birem [Pink
-  Floyd](http://en.wikipedia.org/wiki/Pink_Floyd)-dan hem öň diňlemedik
+  Floyd](https://en.wikipedia.org/wiki/Pink_Floyd)-dan hem öň diňlemedik
   albomlarymy aldym
 * Laptop: men munsyz gezip bilmeýän, iň agyram şul
 * Fotoaparat
@@ -50,12 +50,11 @@ zatlarymy ýazmakçy. Ilki bilen rugzaga (sumka) nämeler alyşdyrdym,
 * We başgada birgiden akyr-ukur, karta, şarj enjamlar, kompass, fonarik, first
   aid üçin ýara bagy wş
 
-Bulardan başga hem telefonyma [Bahn](http://www.bahn.com) (Germaniýaň otly
+Bulardan başga hem telefonyma [Bahn](https://www.bahn.com) (Germaniýaň otly
 sistemasy) [app][bahnapp] gurdym, ýewropadaky hemme şäherler arasy otly
-wagtlaryny tapsa bolýar, ýenede [Free Wi-Fi
-Finder](https://itunes.apple.com/us/app/free-wifi-finder/id411134124) we birnäçe
-şäher guide-leri bolan Lonely Planet
-[app](http://www.lonelyplanet.com/apps-and-ebooks/)-lerini guryşdyrdym.
+wagtlaryny tapsa bolýar, ýenede `Free Wi-Fi Finder` app we birnäçe şäher
+guide-leri bolan Lonely Planet [app](https://www.lonelyplanet.com)-lerini
+guryşdyrdym.
 
 Kyn, howply we şol bir wagtda gyzykly on bäş gün garaşýar..
 
@@ -64,6 +63,6 @@ Kyn, howply we şol bir wagtda gyzykly on bäş gün garaşýar..
 
 ![eurail planning](/files/eurail/01.JPG)
 
-[eurail]: http://www.eurail.com/eurail-passes
-[thrones]: http://www.amazon.com/Game-Thrones-Song-Fire-Book/dp/0553573403
+[eurail]: https://www.eurail.com/en/eurail-passes
+[thrones]: https://www.amazon.com/Game-Thrones-Song-Fire-Book/dp/0553573403
 [bahnapp]: https://www.bahn.com/en/view/booking-information/booking/db-navigator-app.shtml

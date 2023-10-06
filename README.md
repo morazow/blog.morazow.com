@@ -1,14 +1,9 @@
 # Personal Blog
 
-[![Build Status](https://img.shields.io/travis/morazow/blog.morazow.com.svg?style=flat-square)][travis]
+[![Build Status](https://github.com/morazow/blog.morazow.com/actions/workflows/ci.yml/badge.svg)](https://github.com/morazow/blog.morazow.com/actions/workflows/ci.yml)
+[![Deploy Status](https://github.com/morazow/blog.morazow.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/morazow/blog.morazow.com/actions/workflows/deploy.yml)
 
-This repository contains source files for [personal blog][blog] of
-[m.orazow][morazow].
+This repository contains source files for [personal blog][blog] of [m.orazow][morazow].
 
-This blog is built using [Jekyll](https://github.com/jekyll/jekyll).
-
-Build locally by running `make`.
-
-[travis]: https://travis-ci.org/morazow/blog.morazow.com
 [blog]: https://blog.morazow.com
 [morazow]: https://morazow.com
