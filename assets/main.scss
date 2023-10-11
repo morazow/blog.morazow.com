@@ -18,12 +18,6 @@ body {
     padding: 15px 0;
 }
 
-.post-title {
-    font-size: 24px;
-    letter-spacing: -1px;
-    line-height: 1;
-}
-
 .post-list > li {
     margin-bottom: 30px;
 }
@@ -31,10 +25,6 @@ body {
 .post-list > li:not(:first-child) {
     border-top: 4px solid #e8e8e8;
     padding-top: 30px;
-}
-
-.post-content h2 {
-    font-size: 18px;
 }
 
 .site-footer {
@@ -244,4 +234,15 @@ pre code {
     pre {
         margin: 0;
     }
+}
+
+.caption {
+  margin-top: 0.5em;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.img-group {
+    margin-bottom: 1.5rem;
 }
