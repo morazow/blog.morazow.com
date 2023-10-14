@@ -189,7 +189,7 @@ In ARM hardware model, there is no total store order. It only provides total ord
 
 ### Data Race Free Sequential Consistency (DRF-SC)
 
-In their 1990 paper called [Weak Ordering &mdash; A New Definition](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.5567), Sarita Adve and Mark Hill introduced a synchronization model known as the data-race-free (DRF) model.
+In their 1990 paper called [Weak Ordering &mdash; A New Definition](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.5567), Sarita Adve and Mark Hill introduced a synchronization model known as the data-race-free (DRF) model.
 
 This model assumes that there are distinct hardware memory synchronization operations, and memory read or write operations can be rearranged between these synchronization operations. However, reads and writes must not be moved across the synchronization operations.
 
