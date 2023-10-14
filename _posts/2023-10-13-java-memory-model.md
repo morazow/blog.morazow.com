@@ -326,7 +326,7 @@ Similar reasoning applies to the x86-TSO model. The write buffer from a single p
 
 Please be aware that we are writing these programs in assembly like language, where each instruction is executed by the processor. For the ARM model, these instructions can be reordered. Writes can be run in a different order, resulting in the possibility of an outcome.
 
-For the Java language, using plain variables, the outcome mentioned above is possible. The optimizing compilers like Just in Time (JIT) or Ahead of Time (AOT) compilers can reorder updates on the `x` and `y` variables.
+For the Java language, using plain variables, the outcome mentioned above is possible. The optimizing compilers can reorder updates on the `x` and `y` variables.
 
 However, if we declare `y` as `volatile`, then write and read on a volatile variable produces a happens-before edge. This edge precludes the optimizing Java compiler from moving the update on `x` after write on `y` operation.
 
