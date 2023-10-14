@@ -258,8 +258,8 @@ These two orderings are allowed.
 
 <table style="table-layout: fixed;">
 <tr>
-<th><img src="/files/jmm/jmm-reorderings-hb-ordering01.jpg"></th>
-<th><img src="/files/jmm/jmm-reorderings-hb-ordering02.jpg"></th>
+<th><img alt="Happens-before allowed reordering, case one." src="/files/jmm/jmm-reorderings-hb-ordering01.jpg"></th>
+<th><img alt="Happens-before allowed reordering, case two." src="/files/jmm/jmm-reorderings-hb-ordering02.jpg"></th>
 </tr>
 </table>
 
@@ -271,8 +271,8 @@ These two orderings are not allowed.
 
 <table style="table-layout: fixed;">
 <tr>
-<th><img src="/files/jmm/jmm-reorderings-hb-ordering03.jpg"></th>
-<th><img src="/files/jmm/jmm-reorderings-hb-ordering04.jpg"></th>
+<th><img alt="Happens-before forbidden reordering, case one." src="/files/jmm/jmm-reorderings-hb-ordering03.jpg"></th>
+<th><img alt="Happens-before forbidden reordering, case two." src="/files/jmm/jmm-reorderings-hb-ordering04.jpg"></th>
 </tr>
 </table>
 
@@ -338,16 +338,16 @@ We could easily visualize the happens-before (HB) edges in the possible executio
 
 <table style="table-layout: fixed;">
 <tr>
-<th><img src="/files/jmm/jmm-message-passing-hb-outcome01.jpg"></th>
-<th><img src="/files/jmm/jmm-message-passing-hb-outcome02.jpg"></th>
+<th><img alt="Message passing test happens-before outcome one." src="/files/jmm/jmm-message-passing-hb-outcome01.jpg"></th>
+<th><img alt="Message passing test happens-before outcome two." src="/files/jmm/jmm-message-passing-hb-outcome02.jpg"></th>
 </tr>
 <tr>
 <td style="padding-right:30px"><em>HB consistent, reads observe latest writes on the happens-before edge.</em></td>
 <td style="vertical-align:top;"><em>HB consistent, reads observe the initial values.</em></td>
 </tr>
 <tr>
-<th><img src="/files/jmm/jmm-message-passing-hb-outcome03.jpg"></th>
-<th><img src="/files/jmm/jmm-message-passing-hb-outcome04.jpg"></th>
+<th><img alt="Message passing test happens-before outcome three." src="/files/jmm/jmm-message-passing-hb-outcome03.jpg"></th>
+<th><img alt="Message passing test happens-before outcome four." src="/files/jmm/jmm-message-passing-hb-outcome04.jpg"></th>
 </tr>
 <tr>
 <td style="padding-right:30px">
