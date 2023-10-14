@@ -48,7 +48,13 @@ Let us imagine we are writing an assembly code for our multiprocessor computer. 
 
 From [Leslie Lamport's 1979 paper](https://www.microsoft.com/en-us/research/uploads/prod/2016/12/How-to-Make-a-Multiprocessor-Computer-That-Correctly-Executes-Multiprocess-Programs.pdf):
 
-> The customary approach to designing and proving the correctness of multiprocess algorithms for such a computer assumes that the following condition is satisfied: the result of any execution is the same as if the operations of all the processors were executed in some sequential order, and the operations of each individual processor appear in this sequence in the order specified by its program. A multiprocessor satisfying this condition will be called sequentially consistent.
+> The customary approach to designing and proving the correctness of
+> multiprocess algorithms for such a computer assumes that the following
+> condition is satisfied: the result of any execution is the same as if the
+> operations of all the processors were executed in some sequential order, and
+> the operations of each individual processor appear in this sequence in the
+> order specified by its program. A multiprocessor satisfying this condition
+> will be called sequentially consistent.
 
 This definition is natural to a programmer. It states that operations will be executed in the order they appear in a written program, and threads will be interleaved in some order.
 
@@ -205,9 +211,10 @@ The main Java synchronization operations are:
 - Unlock of mutex **m** happens before any following lock of **m**.
 - Write to volatile variable **v** happens before any following read of **v**.
 
-{% highlight info %}
-Of course, there are more synchronization operations in Java, but in this blog we will focus on `volatile` since it demonstrates the main idea.
-{% endhighlight %}
+```txt
+Of course, there are more synchronization operations in Java, but in this blog
+we will focus on `volatile` since it demonstrates the main idea.
+```
 
 ### Happens Before
 
@@ -219,8 +226,12 @@ These edges define whether an execution has a data race; if there is no data rac
 
 This conforms to the definition of **DRF-SC**.
 
-```text
-DEFINE DATA RACE
+```txt
+Two events occurring on separate processors and not ordered by the
+happens-before relationship may happen at the same moment; the exact order is
+unclear. We refer to them as executing concurrently. A data race occurs when a
+write to a variable executes concurrently with a read or another write of the
+same variable.
 ```
 
 We should remark two important points:
@@ -267,7 +278,7 @@ These two orderings are not allowed.
 
 Both of these orderings break the **happens-before** edge.
 
-For the first case, implementations cannot know if there is any read on `x` that should observe the moved write on `x`. Similarly, in the second scenario, implementations are unable to determine if the moved read on `y` should observe any preceding write to `y`.
+For the first case, implementations cannot know if there is any read on `x` that should observe write on `x` before moving. Similarly, in the second case, implementations are unable to determine if the moved read on `y` should observe any preceding write to `y`.
 
 ## Litmus Tests
 
@@ -550,19 +561,22 @@ Adding `volatile` to both variables, the outcome isn't possible since it creates
 
 All of the litmus tests are validated using the [JCStress](https://github.com/openjdk/jcstress) framework. You can find the GitHub repository here at [github.com/morazow/jmm-litmus-tests](https://github.com/morazow/jmm-litmus-tests).
 
-## Remarks
+## Locks
 
-### Java Locks
-
-### Java VarHandles
-
-### Java Finals
+Java locks also provide the ordering, as lock enter happens before lock exit, which is similar to the behavior of volatile write and read. However, they ensure `mutual exclusion`, preventing two threads from concurrently accessing the locked or synchronized section.
 
 ## Conclusion
 
-## References
+With blog I tried to summarize my understanding of the Java Memory Model.
 
-I used these main resources to better understand synchronization and high-level programming language memory models.
+- We began by learning about the guarantees offered by the hardware models.
+- We learned that by using proper synchronization mechanisms to ensure data-race-free implementations, the program outcomes could be explained as though they are executed in sequentially consistent manner.
+- We looked into the Java Memory Model and learned how **happens-before** edges are established.
+- We also ran several litmus tests to better understand how different models behave.
+
+## Acknowledgements
+
+I could not have understood this topic without the help of the following resources.
 
 - [https://research.swtch.com/mm &mdash; Memory Models](https://research.swtch.com/mm)
 - [https://shipilev.net/blog/2014/jmm-pragmatics/ &mdash; JMM Pragmatics](https://shipilev.net/blog/2014/jmm-pragmatics/)
