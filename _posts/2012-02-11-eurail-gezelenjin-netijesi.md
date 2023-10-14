@@ -11,7 +11,7 @@ category: tk
 Şeýlelik bilen 15 günlik gezelenji hem gutardym. Käwagtlar ýadadym, üşedim ýöne
 şonda hem gaty gyzyklydy.
 
-Birnäçe agza sorapdy wiza gerekmi ýa diňe [Eurail](http://www.eurail.com/home)
+Birnäçe agza sorapdy wiza gerekmi ýa diňe [Eurail](https://www.eurail.com/en)
 bilet alsaň bolýamy diýip, "Wiza gerek"!  Öňüräk mail bilen özüm hem soradym şu
 ýerik ýazjak, "The Eurail Pass is no visa; travelers are responsible for
 ensuring that they have all necessary travel documents and visas." Ýagny bilet

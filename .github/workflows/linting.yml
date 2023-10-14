@@ -1,6 +1,8 @@
-name: CI Jekyll Site
+name: Linting
 
 on:
+  schedule:
+    - cron: "0 5 * * 0"
   push:
     branches:
       - main
@@ -11,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  linkChecker:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -29,3 +31,8 @@ jobs:
         fi
     - name: Build site
       run: JEKYLL_ENV=production bundle exec jekyll build
+    - name: Install htmlproofer
+      run: gem install html-proofer
+    - name: Run htmlproofer
+      run: |
+        htmlproofer --allow-hash-href --allow_missing_href --assume-extension --external-only --ignore-status-code 302,999 --ignore-urls "https://fonts.gstatic.com" --hydra='{"max_concurrency": 10}' ./_site

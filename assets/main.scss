@@ -8,13 +8,11 @@ body {
 }
 
 .site-header {
-    width: 50%;
     padding-top: 1em;
     margin-top: 4em;
 }
 
 .page-content {
-    width: 50%;
     padding: 15px 0;
 }
 
@@ -28,12 +26,16 @@ body {
 }
 
 .site-footer {
-    width: 50%;
     text-align: left;
 }
 
 .wrapper {
     padding-left: 0;
+    margin-left: 60px;
+
+    @include media-query($on-palm) {
+        margin-left: 20px;
+    }
 }
 
 article .meta {
@@ -85,7 +87,7 @@ nav .icons {
     float: right;
 }
 
-@media screen and (max-width: 600px) {
+@include media-query($on-palm) {
     nav {
         padding: 0;
         border: 0;
@@ -120,7 +122,7 @@ nav .icons {
     margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 1024px) {
+@include media-query($on-laptop) {
     .post-listing {
         margin-top: 2rem;
     }

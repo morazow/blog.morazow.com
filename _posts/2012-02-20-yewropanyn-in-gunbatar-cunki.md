@@ -7,7 +7,7 @@ category: tk
 <p class="meta">2012 ýylyň 20-nji fewraly - Lissabon</p>
 
 Şu gün irden oglanlar bilen Ýewropanyň iň günbatar çüňki bolan [Cabo da
-Roca](http://en.wikipedia.org/wiki/Cabo_da_Roca) gitmegi maksat edinipdik. Hawa
+Roca](https://en.wikipedia.org/wiki/Cabo_da_Roca) gitmegi maksat edinipdik. Hawa
 Lissabondan ol ýerik ýöräp ha gidip bolmaýar, iň amatlysy welisipet (tigir)
 bilen gitmek. Ilki Lissabondan Cascais-a çenli otly bilen gitdik. Ol ýerde hem
 mugt tigir berýän ýerler bar, şolaryň birinden tigirlerimizi alyşdyryp ýola
@@ -22,7 +22,7 @@ Portugaliýanyň (hatta ýewropanyň) günbatar kenaryndan, okaýanyň gyrasynda
 sürýädik. Ýolda käwagtlar depeleri çykmaly bolýar, ýadatýar. Ýöne gaýdyşyn has
 hezil, welikleri sürmek hökman däl, diňe ýönüňi gönülemek ýeterlikdi.
 
-[Cabo da Roca](http://en.wikipedia.org/wiki/Cabo_da_Roca)-a ýetip gowy dynç
+[Cabo da Roca](https://en.wikipedia.org/wiki/Cabo_da_Roca)-a ýetip gowy dynç
 aldyk, okeýanyň gyrasynda otyryp iýip içdik. Daş töweregi birsalym aýlanyp
 yzymyza dolandyk. Ýolda bir plaja sowylyp ol ýerde hem bir salym okeýan
 tolkynlary synlap çägede oýnap bildik.
