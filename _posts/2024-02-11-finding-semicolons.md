@@ -8,8 +8,6 @@ published: true
 
 [Gunnar Morling](https://twitter.com/gunnarmorling) launched [One Billion Row Challenge (1BRC)](https://github.com/gunnarmorling/1brc) in the beginning of the year. The goal is to calculate temperature aggregates (min, max, sum) of weather stations. The data is one billion rows of measurements in `<string: station>;<double: temperature>` format.
 
-For example:
-
 ```txt
 Hamburg;12.0
 Bulawayo;8.9
@@ -43,7 +41,7 @@ private int findSemicolonPosition(byte[] line) {
     return -1;
 }
 ```
-> Linear scan to find the semicolon.
+> Linear scan to find the semicolon position in byte array
 
 Apparently, simple task of finding a byte character in a given string could be heavily optimized.
 
@@ -55,35 +53,34 @@ In this blog I am going to look into two options that were used in **1BRC** subm
 
 The idea is to load multiple bytes into single 64-bit register and then perform bitwise operations to find the index of the matching byte. On `little-endian` machines, we want the index of the first matching byte from the right end of the register, since little-endian machines reverse the bytes when a word is loaded into a register.
 
-Mainly we are looking for the following function:
+Mainly we are looking for the following function, `indexOfFirstMatched(word, pattern)`:
 
 ```txt
-                                    /
-                                   /  0, word = XXXXXXXXXXXXXXOO
-                                  |   1, word = XXXXXXXXXXXXOONN
-                                  |   2, word = XXXXXXXXXXOONNNN
-                                 /    3, word = XXXXXXXXOONNNNNN
-indexOfFirstMatchedByte(word) = <     4, word = XXXXXXOONNNNNNNN
-                                 \    5, word = XXXXOONNNNNNNNNN
-                                  |   6, word = XXOONNNNNNNNNNNN
-                                  |   7, word = OONNNNNNNNNNNNNN
-                                   \  8, word = NNNNNNNNNNNNNNNN // return byte length
-                                    \                            // if no match is found
+                                      /
+                                     /  0, word = XXXXXXXXXXXXXXOO
+                                    |   1, word = XXXXXXXXXXXXOONN
+                                    |   2, word = XXXXXXXXXXOONNNN
+                                   /    3, word = XXXXXXXXOONNNNNN
+indexOfFirstMatched(word, 0xOO) = <     4, word = XXXXXXOONNNNNNNN
+                                   \    5, word = XXXXOONNNNNNNNNN
+                                    |   6, word = XXOONNNNNNNNNNNN
+                                    |   7, word = OONNNNNNNNNNNNNN
+                                     \  8, word = NNNNNNNNNNNNNNNN // return byte length
+                                      \                            // if no match is found
 ```
 
 The `OO` denotes the match byte, `NN` denotes a nonzero byte, and `XX` denotes a byte that maybe zero or nonzero. If no match is found, the function returns the length of word.
 
-
 This technique perfectly fits for finding locations of semicolons in 1BRC problem during parsing of each line. Most of the submissions used technique from [Richard Startin](https://twitter.com/richardstartin)'s ["Finding Bytes"](https://richardstartin.github.io/posts/finding-bytes.html) blog post.
 
-For example, [Thomas Würthinger](https://twitter.com/thomaswue) early [submission](https://github.com/thomaswue/1brc/blob/b3b88515475bc71f4b11564e62ebdf24120a8088/src/main/java/dev/morling/onebrc/CalculateAverage_thomaswue.java#L224-L229):
+For example, [Thomas Würthinger](https://twitter.com/thomaswue) early [submission](https://github.com/thomaswue/1brc/blob/b3b88515475bc71f4b11564e62ebdf24120a8088/src/main/java/dev/morling/onebrc/CalculateAverage_thomaswue.java#L224-L229) (slightly modified by me):
 
 ```java
 private static int findDelimiter(long word) {
     long input = word ^ 0x3B3B3B3B3B3B3B3BL;
-    long tmp = (input & 0x7F7F7F7F7F7F7F7FL) + 0x7F7F7F7F7F7F7F7FL;
-    tmp = ~(tmp | input | 0x7F7F7F7F7F7F7F7FL);
-    return Long.numberOfTrailingZeros(tmp) >>> 3;
+    long match = (input & 0x7F7F7F7F7F7F7F7FL) + 0x7F7F7F7F7F7F7F7FL;
+    match = ~(match | input | 0x7F7F7F7F7F7F7F7FL);
+    return Long.numberOfTrailingZeros(match) >>> 3;
 }
 ```
 
@@ -205,7 +202,7 @@ private static int findDelimiter(BufferedFile file, int startPos) {
 
 ## Conclusion
 
-I have also run these methods through [JMH](https://github.com/openjdk/jmh) benchmarks. GitHub repository with the code and benchmarks is [here](https://github.com/morazow/java-simd-benchmarks).
+I have also run these methods through [JMH](https://github.com/openjdk/jmh) benchmarks. GitHub repository with the code and benchmarks is [morazow/java-simd-benchmarks](https://github.com/morazow/java-simd-benchmarks).
 
 The benchmark evaluates the average running time (lower is faster) of each method on randomly generated `100K` and `100M` measurements data.
 
