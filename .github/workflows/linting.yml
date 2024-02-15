@@ -35,4 +35,15 @@ jobs:
       run: gem install html-proofer
     - name: Run htmlproofer
       run: |
-        htmlproofer --allow-hash-href --allow_missing_href --assume-extension --external-only --ignore-status-code 302,999 --ignore-urls "https://fonts.gstatic.com" --hydra='{"max_concurrency": 10}' ./_site
+        htmlproofer --checks "Images,Scripts" --assume-extension --hydra='{"max_concurrency": 10}' ./_site
+    - name: Configure broken links checker
+      run: |
+        echo '{"aliveStatusCodes": [429, 200], "ignorePatterns": [' \
+               '{"pattern": "^/files/"},' \
+             ']}' > ./links-checker.json
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'yes'
+        config-file: ./links-checker.json
+        folder-path: _posts
