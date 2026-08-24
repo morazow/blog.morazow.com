@@ -1,0 +1,12 @@
+/* Loaded by the Comentario embed via css-override, on top of its default
+ * styles. The embed already inherits the page font (no-fonts is set on the
+ * tag). Align the accent colors with the whiteglass theme. */
+
+.comentario-root a {
+  color: #a00;
+  text-decoration: none;
+}
+
+.comentario-root a:hover {
+  text-decoration: underline;
+}

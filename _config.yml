@@ -2,6 +2,7 @@
 title: SCALED VOID
 url: https://morazow.com
 theme: jekyll-whiteglass
+comments: true
 plugins:
   - jekyll-archives
   - jekyll-paginate

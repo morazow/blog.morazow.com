@@ -4,6 +4,7 @@ created_at: "2024-02-10 01:28"
 tags: java swar simd java-vector-api
 title: "Finding Semicolons: Examples From 1BRC Submissions"
 published: true
+comments: true
 ---
 
 [Gunnar Morling](https://twitter.com/gunnarmorling) launched [One Billion Row Challenge (1BRC)](https://github.com/gunnarmorling/1brc) in the beginning of the year. The goal is to calculate temperature aggregates (min, max, sum) of weather stations. The data is one billion rows of measurements in `<string: station>;<double: temperature>` format.
