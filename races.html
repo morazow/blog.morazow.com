@@ -1,0 +1,27 @@
+---
+layout: default
+title: races
+---
+
+<p>
+  I started running in 2023, but only began logging my races in 2025.
+</p>
+
+<p>
+  My running races from most recent to oldest:
+</p>
+<ul class="posts">
+    {% assign races = site.data.races | sort: "date" | reverse %}
+    {% for race in races %}
+        <li>
+            {{ race.date | date: "%Y %b %-d" }},
+            {{ race.name }}, {{ race.location }},
+            {{ race.type }}, <strong>{{ race.time }}</strong>
+            {% if race.note %}
+            <ul>
+                <li><em>{{ race.note }}</em></li>
+            </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,43 @@
+---
+
+# Race results, rendered as a table, one column per race type.
+# Fields: date, name, location, type (10K, Half Marathon, Marathon, Other),
+# distance (km), time, note (optional).
+
+- date: 2025-10-26
+  name: SportScheck Run
+  location: Nürnberg
+  type: Half Marathon
+  distance: 21.28 km
+  time: "2:12:38"
+
+- date: 2025-12-31
+  name: Silvesterlauf
+  location: Nürnberg
+  type: 10K
+  distance: 10.06 km
+  time: "50:42"
+
+- date: 2026-03-01
+  name: FinishLine Run
+  location: Nürnberg
+  type: Half Marathon
+  distance: 21.17 km
+  time: "1:55:34"
+  note: Yunus run Schülerlauf 800m
+
+- date: 2026-05-10
+  name: Wings for Life World Run
+  location: Nürnberg
+  type: Other
+  distance: 22.70 km
+  time: "2:11:50"
+  note: No finish line, caught by the catcher car, run ~22 km
+
+- date: 2026-06-14
+  name: Metropolmarathon
+  location: Fürth
+  type: Marathon
+  distance: 41.57 km
+  time: "4:13:20"
+  note: My 1st Marathon, Yunus run the KidsMarathon 1.4 km
