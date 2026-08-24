@@ -9,6 +9,10 @@ plugins:
 highlighter: rouge
 markdown: kramdown
 
+# Silence Sass deprecation warnings from the whiteglass theme gem
+sass:
+  quiet_deps: true
+
 permalink: /:year/:month/:day/:title/
 paginate_path: /posts/:num/
 paginate: 5
